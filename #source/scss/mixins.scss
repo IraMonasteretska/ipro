@@ -1,0 +1,39 @@
+@mixin resetul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin resetbtn {
+    border: none;
+    padding: 0;
+    background: transparent;
+    outline: none;
+}
+
+@mixin bluebtn {
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: #556EE6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 45px;
+    min-width: 168px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        background: #485ec4;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.15rem rgba(111,132,234,0.5);
+    }
+
+}
+
+// @include bluebtn;

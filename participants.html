@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="dashboardwrapper">
+        <aside class="dashboardsidebar">
+            <button class="togglebarbtn">
+                <img src="img/right-arrow.png" alt="toggle">
+            </button>
+            <p class="title">Menu</p>
+            <ul class="dashboardsidebar__menu">
+                <li>
+                    <a href="#">
+                        <span class="iconwrap">
+                            <img src="img/home.png" alt="img">
+                        </span>
+                        <span class="listtext">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span class="iconwrap">
+                            <img src="img/group.png" alt="img">
+                        </span>
+                        <span class="listtext">Participants</span>
+                    </a>
+                    <ul class="dashboardsidebar__submenu">
+                        <li>
+                            <a href="#">
+                                Enroll Participant
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="iconwrap">
+                            <img src="img/responsive.png" alt="img">
+                        </span>
+                        <span class="listtext">Device</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="dashboardsection">
+            <div class="dashboardcontent">
+                <div class="dashboardheadsect">
+                    <h1 class="title">Participants</h1>
+                    <p class="descr">
+                        Optional step subtitle that highlights the main purpose and end goal of the step.
+                    </p>
+                    <a href="#" class="bluebtn">Enroll Paricipant</a>
+                    <div class="searchbox">
+                        <button class="searchbtn"><img src="img/search-icon.svg" alt="search"></button>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="btn-group sortbtns" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn active">All Sequences</button>
+                            <button type="button" class="btn">A</button>
+                            <button type="button" class="btn">B</button>
+                        </div>
+                        <button class="filter">
+                            <img src="img/filter.svg" alt="filter">
+                        </button>
+                    </div>
+                </div>
+                <div class="dashboardbodysect">
+                    <div class="tablewrapper">
+                        <table class="table table-striped table-hover table-bordered sortable">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Participants</th>
+                                    <th rowspan="2">Enroll Date</th>
+                                    <th rowspan="2">Sequence</th>
+                                    <th colspan="2" class="no-sort">
+                                        Devices
+                                    </th>
+                                    <th colspan="3" class="no-sort">Study Phases</th>
+                                    <th rowspan="2">Study Completion</th>
+                                    <th rowspan="2">Code</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Fitbit
+                                    </th>
+                                    <th>
+                                        Phone
+                                    </th>
+
+
+                                    <th>Control Diary</th>
+                                    <th>Washed - out</th>
+                                    <th>ipro Diary </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="name">Justin Brooks</p>
+                                        <p class="email">justin.brooks@dprime.ai</p>
+                                        <p class="particcode">7575811363</p>
+                                    </td>
+                                    <td>
+                                        <p class="date">
+                                            Aug 21, 2023
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="sequencespan"
+                                            style="border: 1px solid #556EE6; background: #556EE6; color: #fff;">A</span>
+                                    </td>
+                                    <td>
+                                        <p class="fitbitcol assigned">
+                                            <img src="img/assigned.svg" alt="img">
+                                            Assigned
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="phone error">
+                                            <img src="img/error.svg" alt="img">
+                                            Error
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #5D00D6;background: #E3ABFF; ">
+                                                Sep 20 - Sep 27,2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #00688C;background: #C5D8DF; ">
+                                                Sep 13 - Sep 20, 2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #436B1D;background: rgba(138, 201, 79, 0.40); ">
+                                                Sep 05 - Sep 13, 2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="sudycompletion">
+                                            <p>Sep01, - Sep 30, 2023</p>
+                                            <div class="progres">
+                                                <div class="progres__linewrap">
+                                                    <div class="greyline">
+                                                        <div class="greenline" style="width: 33%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progres__percent">
+                                                    %33
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="codekey">
+                                            <img src="img/key.svg" alt="img">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="name">Jane Doe</p>
+                                        <p class="email">r@s.d</p>
+                                        <p class="particcode">123</p>
+                                    </td>
+                                    <td>
+                                        <p class="date">
+                                            Sep 21, 2023
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="sequencespan"
+                                            style="border: 1px solid #556EE6; background: #fff; color: #556EE6;">B</span>
+                                    </td>
+                                    <td>
+                                        <p class="fitbitcol done">
+                                            <img src="img/done.svg" alt="img">
+                                            Done
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="phone done">
+                                            <img src="img/done2.svg" alt="img">
+                                            Done
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <div class="titblock">
+                                                <p class="title">Completed Week</p>
+                                                <p class="descr">Oct 01, - Oct 08 2023</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #436B1D;background: rgba(138, 201, 79, 0.40); ">
+                                                Sep 13 - Sep 20, 2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #00688C;background: #C5D8DF; ">
+                                                Oct 17 - Oct 24, 2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="sudycompletion">
+                                            <p>Oct 01, - Oct 31, 2023</p>
+                                            <div class="progres">
+                                                <div class="progres__linewrap">
+                                                    <div class="greyline">
+                                                        <div class="greenline" style="width: 66%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progres__percent">
+                                                    %66
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="codekey">
+                                            <img src="img/key.svg" alt="img">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="name">Ayush Nigam</p>
+                                        <p class="email">iproayush2023@gmail.com</p>
+                                        <p class="particcode">4438216405</p>
+                                    </td>
+                                    <td>
+                                        <p class="date">
+                                            Oct 13, 2023
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="sequencespan"
+                                            style="border: 1px solid #556EE6; background: #fff; color: #556EE6;">B</span>
+                                    </td>
+                                    <td>
+                                        <p class="fitbitcol sent">
+                                            <img src="img/sent.svg" alt="img">
+                                            Sent
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="phone sent">
+                                            <img src="img/sent2.svg" alt="img">
+                                            Sent
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #00688C;background: #C5D8DF;">
+                                                Sep 20 - Sep 27,2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #5D00D6;background: #E3ABFF; ">
+                                                Oct 24 - Oct 31,2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <span style="color: #5D00D6;background: #E3ABFF; ">
+                                                Nov 1 - Nov 8, 2023
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="sudycompletion percent0">
+                                            <p>Oct 17 - Nov 8, 2023</p>
+                                            <div class="progres">
+                                                <div class="progres__linewrap">
+                                                    <div class="greyline">
+                                                        <div class="greenline" style="width: 0%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progres__percent">
+                                                    %0
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="codekey">
+                                            <img src="img/key.svg" alt="img">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="name">Curl Johsonn</p>
+                                        <p class="email"><a href="#" class="add">Add Email</a></p>
+                                        <p class="particcode">4027799322</p>
+                                    </td>
+                                    <td>
+                                        <p class="date">
+                                            May 07, 2023
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="sequencespan"
+                                            style="border: 1px solid #556EE6; background: #556EE6; color: #fff;">A</span>
+                                    </td>
+                                    <td>
+                                        <p class="fitbitcol pending">
+                                            <img src="img/pending.svg" alt="img">
+                                            Pending
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="phone done">
+                                            <img src="img/done2.svg" alt="img">
+                                            Done
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <a href="#" class="addlink">Add Date</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <a href="#" class="addlink">Add Date</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <a href="#" class="addlink">Add Date</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="sudycompletion percent0">
+                                            <a href="#" class="addlink">Add Date</a>
+                                            <div class="progres">
+                                                <div class="progres__linewrap">
+                                                    <div class="greyline">
+                                                        <div class="greenline" style="width: 0%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progres__percent">
+                                                    %0
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="codekey disabled">
+                                            <img src="img/key.svg" alt="img">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="name">ABC</p>
+                                        <p class="email">abc@gmail.com</p>
+                                        <p class="particcode">6262</p>
+                                    </td>
+                                    <td>
+                                        <p class="date">
+                                            April 24, 2023
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="sequencespan"
+                                            style="border: 1px solid #556EE6; background: #fff; color: #556EE6;">B</span>
+                                    </td>
+                                    <td>
+                                        <p class="fitbitcol returned">
+                                            <img src="img/returned.svg" alt="img">
+                                            Returned
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="phone done">
+                                            <img src="img/returned.svg" alt="img">
+                                            Returned
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <div class="titblock">
+                                                <p class="title">Completed Week</p>
+                                                <p class="descr">May 01 - May07 2023</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <div class="titblock">
+                                                <p class="title">Completed Week</p>
+                                                <p class="descr">May 08, - May 15 2023</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <div class="titblock">
+                                                <p class="title">Completed Week</p>
+                                                <p class="descr">May 15 - May24 2023</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="sudycompletion">
+                                            <p>May 01 - Sep 30, 2023</p>
+                                            <div class="progres">
+                                                <div class="progres__linewrap">
+                                                    <div class="greyline">
+                                                        <div class="greenline" style="width: 100%;background: #0073EE;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progres__percent">
+                                                    %100
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="codekey">
+                                            <img src="img/key.svg" alt="img">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="name">ABCD</p>
+                                        <p class="email">abc@gmail.com</p>
+                                        <p class="particcode">6262</p>
+                                    </td>
+                                    <td>
+                                        <p class="date">
+                                            April 24, 2023
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <span class="sequencespan"
+                                            style="border: 1px solid #556EE6; background: #556EE6; color: #fff;">A</span>
+                                    </td>
+                                    <td>
+                                        <p class="fitbitcol returned">
+                                            <img src="img/pending2.svg" alt="img">
+                                            Pending
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="phone done">
+                                            <img src="img/pending3.svg" alt="img">
+                                            Pending
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <div class="titblock attention">
+                                                <p class="title">Attention</p>
+                                                <p class="descr">May 01 - May07 2023</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <div class="titblock">
+                                                <p class="title">Completed Week</p>
+                                                <p class="descr">May 08, - May 15 2023</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="studyphases">
+                                            <div class="titblock">
+                                                <p class="title">Completed Week</p>
+                                                <p class="descr">May 15 - May24 2023</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="sudycompletion">
+                                            <p>May 01 - Sep 30, 2023</p>
+                                            <div class="progres">
+                                                <div class="progres__linewrap">
+                                                    <div class="greyline">
+                                                        <div class="greenline" style="width: 97%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="progres__percent">
+                                                    %97
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="codekey">
+                                            <img src="img/key.svg" alt="img">
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tablenav">
+                        <div class="tablenav__showpage">
+                            Show
+                            <select class="styledselect" name="protocol">
+                                <option value="1">10</option>
+                                <option value="2">20</option>
+                                <option value="3">30</option>
+                                <option value="4">40</option>
+                                <option value="5">50</option>
+                            </select>
+                            entries
+                        </div>
+                        <div class="tablenav__rightnav d-flex justify-content-end align-items-center">
+                            <div class="selectpage">
+                                <span>Select page</span>
+                                <select class="styledselect" name="protocol">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="currentpage">
+                                <p>1 -21 of 21</p>
+                            </div>
+                            <nav class="tablepagination" aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item prev disabled">
+                                        <a class="page-link" href="#">
+                                            <img src="img/pagination-prev.svg" alt="next">
+                                            Previous
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            Next
+                                            <img src="img/pagination-next.svg" alt="next">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/select2.js"></script>
+<script src="js/common.js"></script>
+
+</html>
