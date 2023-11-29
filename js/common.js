@@ -8,18 +8,6 @@ $(document).ready(function () {
         });
     }
 
-    // filter - add active class
-    $('.sortbtns button').click(function(){
-        $('.sortbtns button').removeClass('active');
-        $(this).addClass('active');
-    });
-
-    // sidebar
-    $('.togglebarbtn').click(function(){
-        $(this).toggleClass('rotate');
-        $('.dashboardwrapper').toggleClass('hidesidebar');
-    });
-
 
 
 });
