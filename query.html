@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query </title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="alertswrapper">
+            <div class="mngnotification">
+                <img class="mngnotification__icon" src="img/overview/danger.png" alt="">
+                <p>
+                    You have 3 unread announcements.
+                    <a href="#">
+                        See 3 unread announcements.
+                    </a>
+                </p>
+                <button class="mngnotification__close">
+                    <img src="img/overview/close.png" alt="close">
+                </button>
+            </div>
+        </div>
+        <div class="querypage">
+            <button class="mobnemu">
+                <img src="img/query/list.png" alt="img">
+            </button>
+            <aside class="querysidebar">
+                <div class="qasidetop">
+                    <a href="#" class="logo">
+                        <img src="img/query/logo.png" alt="logo">
+                    </a>
+                    <ul class="sidebarmenu">
+                        <li>
+                            <a href="#">
+                                <i>
+                                    <img src="img/query/001-home.png" alt="icon">
+                                </i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i>
+                                    <img src="img/query/002-exchange.png" alt="icon">
+                                </i>
+                                <span>File Transfer</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i>
+                                    <img src="img/query/003-folder.png" alt="icon">
+                                </i>
+                                <span> Document Management</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i>
+                                    <img src="img/query/004-user.png" alt="icon">
+                                </i>
+                                <span>Study Data</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i>
+                                    <img src="img/query/005-folder-1.png" alt="icon">
+                                </i>
+                                <span>Query</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i>
+                                    <img src="img/query/006-document.png" alt="icon">
+                                </i>
+                                <span>Reports</span>
+                            </a>
+                        </li>
+                        <li class="helplink">
+                            <a href="#">
+                                <i>
+                                    <img src="img/query/007-question.png" alt="icon">
+                                </i>
+                                <span>Help and Knowledge Base</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="qasidebott">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Project Manager Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/query/exit.png" alt="logout">
+                                Log Out
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </aside>
+            <div class="querycontent">
+                <div class="querycontent__header">
+                    <div class="qhleftblock">
+                        <p class="title">Welcome Again!</p>
+                        <p>
+                            Company: Clinilabs Core Lab
+                        </p>
+                        <p>
+                            Protocol: T123-111 [Retrieved]
+                            <a href="#">
+                                <img src="img/query/sync.png" alt="icon">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="qhrightblock">
+                        <div class="qhuserblock">
+                            <div class="qhuserblock__ava">
+                                <span style="background: #3b63a8;">C</span>
+                            </div>
+                            <div class="qhuserblock__info">
+                                <p>nihan.kucukos@zolta.io</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/query/notification.png" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/query/editing.png" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/query/fullscreen.png" alt="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="querycontent__body">
+                    <div class="q_breadcrumbs">
+                        <ul>
+                            <li><a href="#">InSite 2.0</a></li>
+                            <li><a href="#">ProjectManager</a></li>
+                            <li>Query</li>
+                        </ul>
+                    </div>
+                    <div class="qb__titlesect">
+                        <p class="title">
+                            Query Management
+                        </p>
+                        <div class="searchbox">
+                            <div class="inputfield">
+                                <button class="searchbtn">
+                                    <img src="img/query/search.png" alt="search">
+                                </button>
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#addquery">
+                                <img src="img/query/plus.png" alt="icon">
+                                add query
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <div class="query-switch">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">My Queries</a>
+                            </li>
+                            <li>
+                                <a href="#">All Queries</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+
+
+
+
+
+                    <div class="query-switch">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">My Queries</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">All Queries</button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab">
+                            <div class="query-tabssection">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                                            data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
+                                            aria-selected="true">
+                                            <div class="tabbtn">
+                                                <span class="tabimg">
+                                                    <img src="img/query/003-folder.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    All Queries
+                                                </span>
+                                            </div>
+                                            <span class="count">25</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="opened-tab" data-bs-toggle="tab"
+                                            data-bs-target="#opened-tab-pane" type="button" role="tab"
+                                            aria-controls="opened-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #eefbe7;">
+                                                    <img src="img/query/folder.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Opened
+                                                </span>
+                                            </div>
+                                            <span class="count">2</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="replied-tab" data-bs-toggle="tab"
+                                            data-bs-target="#replied-tab-pane" type="button" role="tab"
+                                            aria-controls="replied-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #ededff;">
+                                                    <img src="img/query/speech.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Replied
+                                                </span>
+                                            </div>
+                                            <span class="count">3</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="closed-tab" data-bs-toggle="tab"
+                                            data-bs-target="#closed-tab-pane" type="button" role="tab"
+                                            aria-controls="closed-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #e0f7fc;">
+                                                    <img src="img/query/double-tick.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Closed
+                                                </span>
+                                            </div>
+                                            <span class="count">17</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="reopened-tab" data-bs-toggle="tab"
+                                            data-bs-target="#reopened-tab-pane" type="button" role="tab"
+                                            aria-controls="reopened-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #ededff;">
+                                                    <img src="img/query/refresh.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Reopened
+                                                </span>
+                                            </div>
+                                            <span class="count">3</span>
+                                        </button>
+                                    </li>
+                                </ul>
+        
+                                <div class="downloadsection">
+                                    <a href="#">
+                                        <img src="img/query/printer.svg" alt="icon">
+                                    </a>
+                                    <a href="#" download="">
+                                        <img src="img/query/xls.svg" alt="icon">
+                                    </a>
+                                    <a href="#" download="">
+                                        <img src="img/query/pdf.svg" alt="icon">
+                                    </a>
+                                </div>
+        
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
+                                        aria-labelledby="all-tab" tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="opened-tab-pane" role="tabpanel" aria-labelledby="opened-tab"
+                                        tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="replied-tab-pane" role="tabpanel"
+                                        aria-labelledby="replied-tab" tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel" aria-labelledby="closed-tab"
+                                        tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="reopened-tab-pane" role="tabpanel"
+                                        aria-labelledby="reopened-tab" tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="query-tabssection">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="alls-tab" data-bs-toggle="tab"
+                                            data-bs-target="#alls-tab-pane" type="button" role="tab" aria-controls="alls-tab-pane"
+                                            aria-selected="true">
+                                            <div class="tabbtn">
+                                                <span class="tabimg">
+                                                    <img src="img/query/003-folder.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    All Queries
+                                                </span>
+                                            </div>
+                                            <span class="count">50</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="openeds-tab" data-bs-toggle="tab"
+                                            data-bs-target="#openeds-tab-pane" type="button" role="tab"
+                                            aria-controls="openeds-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #eefbe7;">
+                                                    <img src="img/query/folder.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Opened
+                                                </span>
+                                            </div>
+                                            <span class="count">20</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="replieds-tab" data-bs-toggle="tab"
+                                            data-bs-target="#replieds-tab-pane" type="button" role="tab"
+                                            aria-controls="replieds-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #ededff;">
+                                                    <img src="img/query/speech.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Replied
+                                                </span>
+                                            </div>
+                                            <span class="count">10</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="closeds-tab" data-bs-toggle="tab"
+                                            data-bs-target="#closeds-tab-pane" type="button" role="tab"
+                                            aria-controls="closeds-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #e0f7fc;">
+                                                    <img src="img/query/double-tick.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Closed
+                                                </span>
+                                            </div>
+                                            <span class="count">10</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="reopeneds-tab" data-bs-toggle="tab"
+                                            data-bs-target="#reopeneds-tab-pane" type="button" role="tab"
+                                            aria-controls="reopeneds-tab-pane" aria-selected="false">
+                                            <div class="tabbtn">
+                                                <span class="tabimg" style="background: #ededff;">
+                                                    <img src="img/query/refresh.png" alt="img">
+                                                </span>
+                                                <span class="tabtitle">
+                                                    Reopened
+                                                </span>
+                                            </div>
+                                            <span class="count">10</span>
+                                        </button>
+                                    </li>
+                                </ul>
+        
+                                <div class="downloadsection">
+                                    <a href="#">
+                                        <img src="img/query/printer.svg" alt="icon">
+                                    </a>
+                                    <a href="#" download="">
+                                        <img src="img/query/xls.svg" alt="icon">
+                                    </a>
+                                    <a href="#" download="">
+                                        <img src="img/query/pdf.svg" alt="icon">
+                                    </a>
+                                </div>
+        
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="alls-tab-pane" role="tabpanel"
+                                        aria-labelledby="alls-tab" tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="inflink">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="openeds-tab-pane" role="tabpanel" aria-labelledby="openeds-tab"
+                                        tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                Can you explain the purpose of a polysomno...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #77de40; border: 1px solid #77de40;">
+                                                                opened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+        
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="replieds-tab-pane" role="tabpanel"
+                                        aria-labelledby="replieds-tab" tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                replied
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">See Relies</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="closeds-tab-pane" role="tabpanel" aria-labelledby="closeds-tab"
+                                        tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #64daf3; border: 1px solid #64daf3;">
+                                                                Closed
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">Reopen</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                    <div class="tab-pane fade" id="reopeneds-tab-pane" role="tabpanel"
+                                        aria-labelledby="reopeneds-tab" tabindex="0">
+        
+                                        <div class="tablewrapper">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Query description</th>
+                                                        <th>Raised on</th>
+                                                        <th>Raised by</th>
+                                                        <th>status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                                What are the key differences between in-lab...
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            09/10/2023
+                                                        </td>
+                                                        <td>
+                                                            Nihan-PM
+                                                        </td>
+                                                        <td>
+                                                            <span class="statuslabel"
+                                                                style="color: #787aff; border: 1px solid #787aff;">
+                                                                reopened
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade formmodal" id="addquery" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <p class="title">Create Query</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="inputfield">
+                            <select class="styledselect" name="protocol" disabled>
+                                <option value="1">Protocol: T123-111</option>
+                                <option value="2">Protocol: T123-112</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="inputfield">
+                            <select class="styledselect" name="sitename">
+                                <option value="1">Site Name</option>
+                                <option value="2">Site Name 2</option>
+                            </select>
+                            <p class="reqinp">required</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="inputfield">
+                            <p class="inplabel">File Name</p>
+                            <select class="styledselect" name="filename">
+                                <option value="1">Choose File Name</option>
+                                <option value="2">File Name 1</option>
+                                <option value="3">File Name 2</option>
+                            </select>
+                            <p class="reqinp">required</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="inputfield">
+                            <p class="inplabel">Send to</p>
+                            <select class="styledselect" name="sendto">
+                                <option value="1">Choose Recipient(s)</option>
+                                <option value="2">Recipient 1</option>
+                                <option value="3">Recipient 2</option>
+                            </select>
+                            <p class="reqinp">required</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="inputfield">
+                            <p class="inplabel">Predefined Queries</p>
+                            <select class="styledselect" name="prqueries">
+                                <option value="1">Choose Recipient(s)</option>
+                                <option value="2">Recipient 1</option>
+                                <option value="3">Recipient 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="inputfield textedtr">
+                            <p class="inplabel">Description</p>
+                            <div class="texteditor">
+                                <div id="editor">
+                                </div>
+                            </div>
+                            <p class="reqinp">required</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="inputfield textedtr">
+                            <p class="inplabel">Description</p>
+                            <div class="file-drop-area">
+                                <span class="fake-btn">
+                                    <img src="img/query/upload.png" alt="img">
+                                </span>
+                                <span class="file-msg">Drop files to attach, or browse</span>
+                                <input class="file-input" type="file" multiple>
+                            </div>
+                            <p class="uplfiledescr">
+                                Note: edf and rec formats allowed. Max allowed files size per upload is 35 MB. Max
+                                allowed
+                                file count per upload is 20 files.
+                            </p>
+                            <p class="uplfiledescr error">
+                                Note: edf and rec formats allowed. Max allowed files size per upload is 35 MB. Max
+                                allowed
+                                file count per upload is 20 files.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end formmodal__btns">
+                    <button class="formmodal__cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="formmodal_submit">Submit</button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/popper.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/select2.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/super-build/ckeditor.js"></script>
+    <script src="js/query.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

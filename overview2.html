@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview 2</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="managersection lightbluebg">
+            <div class="alertswrapper">
+                <div class="mngnotification">
+                    <img class="mngnotification__icon" src="img/overview/danger.png" alt="">
+                    <p>
+                        You have 3 unread announcements.
+                        <a href="#">
+                            See 3 unread announcements.
+                        </a>
+                    </p>
+                    <button class="mngnotification__close">
+                        <img src="img/overview/close.png" alt="close">
+                    </button>
+                </div>
+            </div>
+
+            <div class="overviewsect">
+                <div class="overviewsect__title">
+                    <p>Overview</p>
+                    <div class="overviewsect__select">
+                        <select class="styledselect" name="state">
+                            <option value="1">United States</option>
+                            <option value="2">France</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="overviewsect__cards twocol">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="overviewcard overviewcard_red">
+                                <div class="overviewcard__header">
+                                    <p>Announcement</p>
+                                    <div class="linkwrap">
+                                        <a href="#">
+                                            View
+                                            <img src="img/overview/right-arrow.png" alt="icon">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="overviewcard__body">
+                                    <div class="overview__bignum">
+                                        <p>11</p>
+                                    </div>
+                                    <div class="overview__cardlist">
+                                        <ul>
+                                            <li>
+                                                <span>6</span>
+                                                System Announcements
+                                            </li>
+                                            <li>
+                                                <span>5</span>
+                                                Protocol Announcements
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="overviewcard overviewcard_yellow blacktext">
+                                <div class="overviewcard__header">
+                                    <p>Help Desk Center</p>
+                                    <div class="linkwrap">
+                                        <a href="#">
+                                            View
+                                            <img src="img/overview/right-arrow.png" alt="icon">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="overviewcard__body">
+                                    <div class="overview__bignum">
+                                        <p>12</p>
+                                    </div>
+                                    <div class="overview__cardlist">
+                                        <ul class="twocol">
+                                            <li>
+                                                <img src="img/overview/001-loading-arrow.png" alt="icon">
+                                                1 Open
+                                            </li>
+                                            <li>
+                                                <img src="img/overview/003-file.png" alt="icon">
+                                                2 Reopen
+                                            </li>
+                                            <li>
+                                                <img src="img/overview/002-project.png" alt="icon">
+                                                3 InProgress
+                                            </li>
+                                            <li>
+                                                <img src="img/overview/002-project.png" alt="icon">
+                                                4 Resolved
+                                            </li>
+                                            <li>
+                                                <img src="img/overview/002-project.png" alt="icon">
+                                                2 Closed
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chartsection">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="overviewchartbox">
+                                <div class="text-center">
+                                    <ul class="overviewchartbox__time">
+                                        <li><a href="#" class="active">daily</a></li>
+                                        <li><a href="#">weekly</a></li>
+                                        <li><a href="#">monthly</a></li>
+                                        <li><a href="#">all time</a></li>
+                                    </ul>
+                                </div>
+                                <div class="chartwrap">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="overviewchartbox__link">
+                                        View
+                                        <img src="img/overview/right-arrow.png" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="overviewchartbox">
+                                <div class="text-center">
+                                    <ul class="overviewchartbox__time">
+                                        <li><a href="#" class="active">daily</a></li>
+                                        <li><a href="#">weekly</a></li>
+                                        <li><a href="#">monthly</a></li>
+                                        <li><a href="#">all time</a></li>
+                                    </ul>
+                                </div>
+                                <div class="chartwrap">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="overviewchartbox__link">
+                                        View
+                                        <img src="img/overview/right-arrow.png" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="overviewchartbox">
+                                <div class="text-center">
+                                    <ul class="overviewchartbox__time">
+                                        <li><a href="#" class="active">daily</a></li>
+                                        <li><a href="#">weekly</a></li>
+                                        <li><a href="#">monthly</a></li>
+                                        <li><a href="#">all time</a></li>
+                                    </ul>
+                                </div>
+                                <div class="chartwrap">
+                                    <canvas id="myChart3"></canvas>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="overviewchartbox__link">
+                                        View
+                                        <img src="img/overview/right-arrow.png" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="overviewchartbox">
+                                <div class="text-center">
+                                    <ul class="overviewchartbox__time">
+                                        <li><a href="#" class="active">daily</a></li>
+                                        <li><a href="#">weekly</a></li>
+                                        <li><a href="#">monthly</a></li>
+                                        <li><a href="#">all time</a></li>
+                                    </ul>
+                                </div>
+                                <div class="chartwrap">
+                                    <canvas id="myChart4"></canvas>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="overviewchartbox__link">
+                                        View
+                                        <img src="img/overview/right-arrow.png" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/select2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="js/overview.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
