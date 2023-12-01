@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participants</title>
+    <title>Participants v2</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/select2.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
@@ -56,24 +56,36 @@
         <div class="dashboardsection">
             <div class="dashboardcontent">
                 <div class="dashboardheadsect">
-                    <h1 class="title">Participants</h1>
-                    <p class="descr">
-                        Optional step subtitle that highlights the main purpose and end goal of the step.
-                    </p>
-                    <a href="#" class="bluebtn">Enroll Paricipant</a>
-                    <div class="searchbox">
-                        <button class="searchbtn"><img src="img/search-icon.svg" alt="search"></button>
-                        <input type="text" placeholder="Search">
-                    </div>
-                    <div class="d-flex justify-content-md-end justify-content-sm-start">
-                        <div class="btn-group sortbtns" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn active">All Sequences</button>
-                            <button type="button" class="btn">A</button>
-                            <button type="button" class="btn">B</button>
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-lg-7 col-sm-6">
+                            <h1 class="title">Participants</h1>
+                            <p class="descr">
+                                Optional step subtitle that highlights the main purpose and end goal of the step.
+                            </p>
                         </div>
-                        <button class="filter">
-                            <img src="img/filter.svg" alt="filter">
-                        </button>
+                        <div class="col-xl-4 col-lg-5 col-sm-6 d-flex justify-content-md-end justify-content-start">
+                            <a href="#" class="bluebtn">Enroll Paricipant</a>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="searchboxcol">
+                            <div class="searchbox">
+                                <button class="searchbtn"><img src="img/search-icon.svg" alt="search"></button>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="btnsgroupcol">
+                            <div class="d-flex justify-content-md-end justify-content-sm-start">
+                                <div class="btn-group sortbtns" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn active">All Sequences</button>
+                                    <button type="button" class="btn">A</button>
+                                    <button type="button" class="btn">B</button>
+                                </div>
+                                <button class="filter">
+                                    <img src="img/filter.svg" alt="filter">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="dashboardbodysect">
@@ -638,6 +650,7 @@
         </div>
     </div>
 </body>
+
 
 
 <script src="js/lib/jquery.js"></script>

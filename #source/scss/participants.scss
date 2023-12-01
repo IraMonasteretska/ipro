@@ -213,6 +213,13 @@
         margin-left: 5px;
         width: 42px;
         height: 42px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: rgba(22,21,19,0.7);
+        }
     }
 }
 
@@ -240,6 +247,7 @@
 
     table {
         margin: 0;
+        width: 100% !important;
 
         thead {
             th {
@@ -698,29 +706,35 @@
 
 }
 
-// table-arrows
 .sortable thead th {
     position: relative;
-    padding-right: 24px;
+    padding-right: 24px !important;
 }
 
-.sortable thead th:not(.no-sort)::after {
-    content: '' !important;
-    display: inline-block;
-    width: 10px;
-    height: 14px;
-    background: url('../img/table-arrows.svg') no-repeat center / 100%;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+.sortable thead th:not(.no-sort){
+    &::after {
+        content: '' !important;
+        display: inline-block;
+        width: 10px;
+        height: 14px;
+        background: url('../img/table-arrows.svg') no-repeat center / 100%;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1 !important;
+    }
+
+    &::before {
+        display: none !important;
+    }
 }
 
 .dashboardbodysect table tbody tr td {
     position: relative;
 
     &.editable_td {
-        padding-right: 30px;
+        padding-right: 30px !important;
     }
 }
 
@@ -776,6 +790,18 @@
     flex: 0 0 300px;
 }
 
+.dashboardsidebar>.dashboardsidebar__menu>li>a:not(.active) {
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+table.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
 @media(max-width:1700.8px) {
 
     .dashboardsidebar {
@@ -819,7 +845,7 @@
 
     .sortable td,
     .sortable th {
-        padding: 8px;
+        padding: 8px !important;
     }
 
     .dashboardbodysect table .studyphases {
@@ -874,3 +900,229 @@
     }
 }
 
+@media(max-width:991.8px) {
+    .dashboardsidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1112;
+        height: 100vh;
+        overflow: auto;
+        width: 72px;
+    }
+
+    .dashboardsidebar>.dashboardsidebar__menu>li>a.active {
+        background: transparent;
+
+        .iconwrap {
+            border-radius: 5px;
+            background: rgba(217, 217, 217, 0.2);
+        }
+    }
+
+    .dashboardsection {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 72px;
+    }
+
+    .dashboardsidebar .title {
+        display: none;
+    }
+
+    .togglebarbtn {
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 18px;
+            margin-right: -3px;
+        }
+    }
+
+    .dashboardsidebar__submenu {
+        display: none;
+    }
+
+    .dashboardsidebar>.dashboardsidebar__menu>li>a,
+    .dashboardwrapper.hidesidebar .dashboardsidebar>.dashboardsidebar__menu>li>a {
+        padding-left: 8px;
+    }
+
+    .dashboardwrapper.hidesidebar .dashboardsection {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .dashboardwrapper .dashboardsidebar>.dashboardsidebar__menu>li>a .listtext {
+        transform: translateX(20px);
+    }
+
+    .dashboardwrapper.hidesidebar .dashboardsidebar>.dashboardsidebar__menu>li>a .listtext {
+        transform: translateX(0px);
+    }
+
+    .dashboardwrapper.hidesidebar .dashboardsidebar,
+    .dashboardsidebar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .dashboardwrapper.hidesidebar {
+        .dashboardsidebar {
+            max-width: 280px;
+            flex: 0 0 280px;
+            width: 260px;
+        }
+
+        .dashboardsidebar__submenu {
+            display: block;
+            transform: translateX(0px);
+        }
+
+    }
+
+    .dashboardsidebar .dashboardsidebar__submenu {
+        padding: 5px 0 0 55px;
+
+        li a {
+            font-size: 12px;
+        }
+    }
+
+    .dashboardheadsect {
+        padding: 20px;
+    }
+
+    .dashboardbodysect .tablenav {
+        flex-wrap: wrap;
+    }
+
+    .dashboardbodysect .tablenav .tablenav__showpage {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .dashboardbodysect .tablenav .tablenav__rightnav {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0 20px;
+        justify-content: space-between !important;
+    }
+
+    .edittd {
+        opacity: 0.6;
+    }
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+
+    .dashboardbodysect .tablenav .tablenav__rightnav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tablepagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btnsgroupcol {
+        max-width: 280px;
+        flex: 0 0 280px;
+    }
+
+    .searchboxcol {
+        max-width: calc(100% - 280px);
+        flex: 0 0 calc(100% - 280px);
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .dashboardheadsect {
+        padding: 10px;
+    }
+
+    .dashboardsidebar {
+        width: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 90px;
+    }
+
+    .togglebarbtn {
+        right: 6px;
+        top: 30px;
+    }
+
+    .dashboardsidebar>.dashboardsidebar__menu>li>a,
+    .dashboardwrapper.hidesidebar .dashboardsidebar>.dashboardsidebar__menu>li>a {
+        padding-left: 2px;
+    }
+
+    .dashboardwrapper.hidesidebar .dashboardsidebar {
+        width: 220px;
+    }
+
+    .dashboardsection {
+        padding-left: 50px;
+    }
+
+    .dashboardheadsect .bluebtn {
+        min-height: 42px;
+        min-width: 150px;
+        padding: 5px 10px;
+    }
+
+    .dashboardsidebar, .dashboardwrapper.hidesidebar .dashboardsidebar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+   .sortable th {
+        padding: 4px !important;
+    }
+
+    .dashboardbodysect .tablenav .tablenav__showpage,
+    .dashboardbodysect .tablenav .tablenav__rightnav {
+        padding: 0 10px;
+    }
+
+    .searchboxcol {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .btnsgroupcol {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+    .dashboardheadsect .descr {
+        font-size: 14px;
+    }
+
+}
