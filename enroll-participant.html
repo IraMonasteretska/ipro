@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Participant</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="dashboardwrapper dashboardwrapper__rightbar">
+        <aside class="dashboardsidebar">
+            <button class="togglebarbtn">
+                <img src="img/right-arrow.png" alt="toggle">
+            </button>
+            <p class="title">Menu</p>
+            <ul class="dashboardsidebar__menu">
+                <li>
+                    <a href="#">
+                        <span class="iconwrap">
+                            <img src="img/home.png" alt="img">
+                        </span>
+                        <span class="listtext">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span class="iconwrap">
+                            <img src="img/group.png" alt="img">
+                        </span>
+                        <span class="listtext">Participants</span>
+                    </a>
+                    <ul class="dashboardsidebar__submenu">
+                        <li>
+                            <a href="#">
+                                Enroll Participant
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="iconwrap">
+                            <img src="img/responsive.png" alt="img">
+                        </span>
+                        <span class="listtext">Device</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="dashboardsection">
+            <div class="dashboardcontent formpage">
+                <div class="formsection">
+                    <p class="subtitle">Contact Information</p>
+                    <p class="title">Enroll Participant</p>
+                    <button class="infosidebar">
+                        <img src="img/info.png" alt="img">
+                    </button>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Name" required>
+                                    <p class="reqstatus">Required</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Last Name" required>
+                                    <p class="reqstatus">Required</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="inputfield">
+                                    <input type="email" placeholder="Email" required>
+                                    <p class="reqstatus">Required</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="inputfield">
+                                    <input type="number" placeholder="Phone Number" required>
+                                    <p class="reqstatus">Required</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="inputfield">
+                                    <select class="styledselect" name="method">
+                                        <option value="1">Select your preferred connection method</option>
+                                        <option value="2">method 1</option>
+                                        <option value="3">method 2</option>
+                                        <option value="4">method 3</option>
+                                        <option value="5">method 4</option>
+                                    </select>
+
+                                    <p class="reqstatus">Required</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="inputfield">
+                                    <select class="styledselect" name="timezone">
+                                        <option value="1">Time Zone</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                        <option value="5">4</option>
+                                    </select>
+
+                                    <p class="reqstatus">Required</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="inputfield">
+                                    <textarea placeholder="Comment"></textarea>
+                                    <p class="reqstatus">Optional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="inforightbar">
+            <div class="inforightbar__box">
+                <p class="title">Contact Information</p>
+                <ul>
+                    <li>
+                        Justin Brooks 
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                    <li>
+                        justin.brooks@dprime.ai
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                    <li>
+                        7575811363
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="inforightbar__box">
+                <p class="title">Payment</p>
+            </div>
+            <div class="inforightbar__box">
+                <p class="title title__tt">
+                    Devices
+                    <img src="img/warning-white.svg" alt="img" data-bs-toggle="tooltip" data-bs-html="true"
+                    title="Lorem Ipsum">
+                </p>
+                <ul>
+                    <li>
+                        Fitbit
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                    <li class="warn">
+                        Phone
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="inforightbar__box">
+                <p class="title">Study</p>
+                <ul>
+                    <li>
+                        Study Sequence - A 
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                    <li>
+                        Study Date<br>
+                        Sep01 - Sep 302023
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                    <li>
+                        Control Diary <br>
+                        Sep01 - Sep 302023 
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                    <li>
+                        Washed-out week <br>
+                        Sep01 - Sep 302023
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                    <li>
+                        ipro Diary <br>
+                        Sep01 - Sep 302023
+                        <a href="#"><img src="img/edit-white.svg" alt="img"></a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="arrowbtn">
+                <img src="img/triagle.svg" alt="img">
+            </div>
+        </div>
+
+        <div class="dspfootsett">
+            <div class="dspfootsett__left">
+                <p>Last updated on April 5, 12:43 PM</p>
+                <a href="#" class="btn">Delete</a>
+            </div>
+            <div class="dspfootsett__right">
+                <ul>
+                    <li><a href="#" class="btn">Cancel</a></li>
+                    <li><a href="#" class="btn">Save</a></li>
+                    <li><a href="#" class="btn">Continue</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/popper.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/select2.js"></script>
+<script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script src="js/common.js"></script>
+
+</html>

@@ -31,6 +31,8 @@ $(document).ready(function () {
     $('.togglebarbtn').click(function () {
         $(this).toggleClass('rotate');
         $('.dashboardwrapper').toggleClass('hidesidebar');
+
+        $('.dashboardwrapper').removeClass('showrightbar');
     });
 
     // edit TD
@@ -71,8 +73,26 @@ $(document).ready(function () {
     let table = new DataTable('#sorttab', {
         searching: false,
         paging: false,
-        info: false, 
+        info: false,
     });
 
+    // tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+
+    // mobile - show sidebar (enroll participant)
+    $('.infosidebar').click(function(){
+        $('.inforightbar').addClass('show');
+    });
+    $('.arrowbtn').click(function(){
+        $('.inforightbar').removeClass('show');
+    });
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.inforightbar ').length && !$target.closest('.infosidebar ').length) {
+            $('.inforightbar').removeClass('show');
+        }
+    });
+    
 });
