@@ -85,9 +85,11 @@ $(document).ready(function () {
     $('.infosidebar').click(function(){
         $('.inforightbar').addClass('show');
     });
+
     $('.arrowbtn').click(function(){
         $('.inforightbar').removeClass('show');
     });
+    
     $(document).click(function (event) {
         let $target = $(event.target);
         if (!$target.closest('.inforightbar ').length && !$target.closest('.infosidebar ').length) {

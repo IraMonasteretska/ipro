@@ -1,0 +1,533 @@
+.surveywrapper {
+    min-height: 100vh;
+    background: #201830;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+
+    .ltbg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .rbbg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+    }
+}
+
+.surveycontentsect {
+    position: relative;
+    z-index: 3;
+    padding-top: 140px;
+}
+
+.survey__welcome {
+    max-width: 576px;
+    margin: 0 auto;
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 28px;
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .imgwrap {
+        text-align: center;
+        margin-bottom: 28px;
+
+        img {
+            display: inline-block;
+            max-width: 100%;
+        }
+    }
+
+    .description {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 32px;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+    .inputfield {
+        label {
+            display: block;
+            margin-bottom: 4px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 142%;
+        }
+
+        input {
+            width: 100%;
+            height: 36px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 4px;
+            border: 1px solid #AEB4B9;
+            background: #fff;
+            box-shadow: 0px 1px 0px 0px #898F94 inset;
+            outline: none;
+        }
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            line-height: 142%;
+        }
+
+    }
+
+    .survey__submit {
+        width: 100px;
+        height: 42px;
+        display: flex;
+        margin: 35px auto 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 33px;
+        background: #FFF;
+        box-shadow: 0px 0px 18.3px 0px rgba(255, 255, 255, 0.50);
+        color: #050835;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        border: none;
+        padding: 0;
+        outline: none;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 0px 0px 28.3px 0px rgba(255, 255, 255, 0.50);
+        }
+    }
+
+}
+
+@media (min-width:992px) and (max-height:800px) {
+    .surveycontentsect {
+        padding-top: 80px;
+    }
+
+    .survey__welcome h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .survey__welcome .description {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .survey__welcome .imgwrap {
+        margin-bottom: 20px;
+    }
+
+    .survey__welcome .description {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (min-width:992px) and (max-height:670px) {
+    .surveycontentsect {
+        padding-top: 50px;
+    }
+
+    .survey__welcome h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .survey__welcome .imgwrap {
+        margin-bottom: 15px;
+    }
+
+    .survey__welcome .description {
+        margin-bottom: 20px;
+    }
+
+    .survey__welcome .survey__submit {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .survey__welcome {
+        max-width: 500px;
+    }
+
+    .surveycontentsect {
+        padding-top: 80px;
+    }
+
+    .survey__welcome h1 {
+        font-size: 42px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .surveycontentsect {
+        padding-top: 50px;
+    }
+
+    .survey__welcome {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .survey__welcome h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    .survey__welcome .imgwrap {
+        margin-bottom: 20px;
+
+        img {
+            max-width: 280px;
+        }
+    }
+
+    .survey__welcome .description {
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .survey__welcome .survey__submit {
+        margin-top: 30px;
+    }
+
+}
+
+
+
+// Begin
+.surveystepssection {
+    position: relative;
+    z-index: 2;
+}
+
+.surveystepssection {
+    padding-top: 54px;
+}
+
+.beforestepscreen {
+    max-width: 657px;
+    margin: 0 auto;
+    padding-top: 86px;
+
+    .title {
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 46px;
+    }
+
+    .imgwrap {
+        text-align: center;
+        margin-bottom: 17px;
+
+        img {
+            max-width: 100%;
+            display: inline-block;
+        }
+    }
+
+    .description {
+        margin-bottom: 22px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .stepsbeginlinewrap {
+        color: #fff;
+        font-size: 14px;
+
+        p {
+            margin-bottom: 8px;
+
+            span {
+                display: block;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .stepsbeginlinewrap__lines {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+
+        .stepsbeginlinewrap__line {
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.20);
+            display: inline-block;
+            height: 10px;
+            width: 49px;
+        }
+
+
+    }
+
+    .whitebtn {
+        @include whitebutton;
+    }
+}
+
+
+@media (min-width:992px) and (max-height:800px) {
+    .surveystepssection {
+        padding-top: 50px;
+    }
+
+    .beforestepscreen {
+        padding-top: 30px;
+    }
+
+    .beforestepscreen .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .beforestepscreen .description {
+        font-weight: 400;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width:992px) and (max-height:670px) {
+    .beforestepscreen {
+        padding-top: 0;
+    }
+
+    .beforestepscreen .title {
+        font-size: 24px;
+    }
+
+    .beforestepscreen .stepsbeginlinewrap__lines {
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+@media(max-width:767.8px) {
+
+    .surveystepssection {
+        padding-top: 50px;
+    }
+
+    .beforestepscreen {
+        max-width: 500px;
+        padding-top: 30px;
+    }
+
+    .beforestepscreen .title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .beforestepscreen .stepsbeginlinewrap__lines .stepsbeginlinewrap__line {
+        width: 40px;
+    }
+
+    .beforestepscreen .stepsbeginlinewrap__lines {
+        margin-bottom: 35px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .beforestepscreen {
+        padding-top: 0;
+    }
+
+    .beforestepscreen {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .beforestepscreen .title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .beforestepscreen .imgwrap img {
+        max-width: 280px;
+    }
+
+    .surveystepssection {
+        padding-top: 50px;
+    }
+
+    .beforestepscreen .description {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .beforestepscreen .stepsbeginlinewrap__lines .stepsbeginlinewrap__line {
+        height: 8px;
+        width: calc((100% / 12) - 1px);
+    }
+
+    .beforestepscreen .stepsbeginlinewrap__lines {
+        margin-bottom: 30px;
+    }
+
+}
+
+.beforestepscreen.hide {
+    display: none;
+}
+
+// STEPS
+
+.stepssection {
+    max-width: 465px;
+    margin: 0 auto;
+}
+
+.stepssection__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #FFF;
+
+    .stepssection__header-left {
+        width: 100%;
+        max-width: calc(100% - 170px);
+        flex: 0 0 calc(100% - 170px);
+    }
+
+    .stepssection__header-right {
+        width: 100%;
+        max-width: 170px;
+        flex: 0 0 170px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.sthead__sleeptitle {
+    color: #5ED0F9;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        top: -2px;
+        background: url('../img/survey/sleepdairy.svg') no-repeat center / 100%;
+    }
+}
+
+.sthead__sleeptimes {
+    display: flex;
+
+    .overnight {
+        margin-right: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+        margin: 0;
+
+        &.title {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.60);
+            font-weight: 600;
+        }
+    }
+}
+
+.chartdays {
+    position: relative;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    max-width: 60px;
+    flex: 0 0 60px;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        border: 7px solid rgba(255, 255, 255, 0.4);
+    }
+
+    #myChart {
+        z-index: 2;
+        position: relative;
+    }
+}
+
+.chartdays__info {
+    width: 100%;
+    max-width: calc(100% - 60px);
+    flex: 0 0 calc(100% - 60px);
+    padding-left: 8px;
+
+    p {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.70);
+        font-weight: 600;
+        margin: 0;
+       
+
+        span {
+            display: block;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}
+
