@@ -5,7 +5,7 @@ $(document).ready(function () {
         var myDoughnutChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['Expriting within X days', 'Pending New Equipment Certification', 'Certification Expired', 'Active Certified'],
+                labels: ['text', 'text'],
                 datasets: [{
                     data: [2, 6],
                     backgroundColor: ['#EB9B39', 'rgba(255, 255, 255, 0)'],
@@ -87,7 +87,7 @@ $(document).ready(function () {
 
     });
 
-    
+
 
   
 })
