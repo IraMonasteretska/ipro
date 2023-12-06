@@ -13,6 +13,7 @@
     <div class="surveywrapper">
         <div class="surveystepssection">
             <div class="stepssection">
+
                 <div class="stepssection__header">
                     <div class="stepssection__header-left">
                         <p class="sthead__sleeptitle">Sleep Dairy</p>
@@ -31,6 +32,7 @@
 
                         <div class="chartdays">
                             <canvas id="myChart"></canvas>
+                            <p class="absdays">Day 4</p>
                         </div>
                         <div class="chartdays__info">
                             <p>
@@ -39,16 +41,181 @@
                             </p>
                         </div>
 
-
-
-
                     </div>
                 </div>
-                <div class="stepssection__body">
 
+                <div class="stepssection__stepprogres">
+                    <p>
+                        <span class="actualstep">1</span>/12
+                        <span class="ltext">
+                            Estimated it takes 5 minutes
+                        </span>
+                    </p>
+                    <div class="stepsboxes stepsboxes-1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
 
+                <div class="stepssection__body">
+                    <!-- step 1 -->
+                    <div class="sectstep sectstep1">
+                        <div>
+                            <div class="imgwrap">
+                                <img src="img/survey/img-q1.png" alt="img">
+                            </div>
+                            <p class="questiontext">
+                                1. What time did you go to bed?
+                            </p>
+                            <div class="sharetime">
+                                <p>
+                                    Please share the time in hours and minutes.
+                                </p>
+                                <div class="timesection">
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Hour</p>
+                                    </div>
+
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Minute</p>
+                                    </div>
+
+                                    <div class="ampm">
+                                        <div class="btn-group-vertical" role="group"
+                                            aria-label="Vertical radio toggle button group">
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio1">AM</label>
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio2">PM</label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="stepssection__nav">
+                            <a href="#" class="prevst"><img src="img/survey/prevstep.svg" alt="prev"> Back</a>
+                            <a href="#" class="nextst">Next <img src="img/survey/nextstep.svg" alt="next"></a>
+                        </div>
+
+                    </div>
+
+
+                    <!-- step 2 -->
+                    <div class="sectstep hide sectstep2">
+                        <div>
+                            <div class="imgwrap">
+                                <img src="img/survey/img-q2.png" alt="img">
+                            </div>
+                            <p class="questiontext">
+                                2. What time did you try to go to sleep?
+                            </p>
+                            <div class="sharetime">
+                                <p>
+                                    Please share the time in hours and minutes.
+                                </p>
+                                <div class="timesection">
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Hour</p>
+                                    </div>
+
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Minute</p>
+                                    </div>
+
+                                    <div class="ampm">
+                                        <div class="btn-group-vertical" role="group"
+                                            aria-label="Vertical radio toggle button group">
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio3">AM</label>
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio4">PM</label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="devicereports">
+                                <span class="ydrep">
+                                    <img src="img/survey/clock.svg" alt="icon">
+                                    Your device reports
+                                </span>
+                                <div class="triedtosleep">
+                                    <div class="triedtosleep__img">
+                                        <img src="img/survey/moon.svg" alt="img">
+                                    </div>
+                                    <div class="triedtosleep__descr">
+                                        <p>11 : 30 <span>PM</span></p>
+                                        <a href="#" class="arrtext">
+                                            Tried to Sleep
+                                            <img src="img/survey/rwharr.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="stepssection__nav">
+                            <a href="#" class="prevst"><img src="img/survey/prevstep.svg" alt="prev"> Back</a>
+                            <a href="#" class="nextst">Next <img src="img/survey/nextstep.svg" alt="next"></a>
+                        </div>
+                    </div>
+
+                    <!-- step 3 -->
+                    <div class="sectstep hide sectstep3">
+                        
+                    </div>
+                </div>
+
+
+
+
             </div>
+
+
         </div>
 
 
