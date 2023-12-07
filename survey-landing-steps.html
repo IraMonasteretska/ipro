@@ -165,10 +165,10 @@
                                     <div class="ampm">
                                         <div class="btn-group-vertical" role="group"
                                             aria-label="Vertical radio toggle button group">
-                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3"
+                                            <input type="radio" class="btn-check" name="vbtn-radio1" id="vbtn-radio3"
                                                 autocomplete="off">
                                             <label class="btn" for="vbtn-radio3">AM</label>
-                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4"
+                                            <input type="radio" class="btn-check" name="vbtn-radio1" id="vbtn-radio4"
                                                 autocomplete="off">
                                             <label class="btn" for="vbtn-radio4">PM</label>
                                         </div>
@@ -206,15 +206,264 @@
 
                     <!-- step 3 -->
                     <div class="sectstep hide sectstep3">
-                        
+                        <div>
+                            <div class="imgwrap">
+                                <img src="img/survey/img-q3.png" alt="img">
+                            </div>
+                            <p class="questiontext">
+                                3. How long did it take you to fall asleep?
+                            </p>
+                            <div class="sharetime">
+                                <p>
+                                    Please share the time in hours and minutes.
+                                </p>
+                                <div class="timesection">
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Hour</p>
+                                    </div>
+
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Minute</p>
+                                    </div>
+
+                                    <!-- <div class="ampm">
+                                        <div class="btn-group-vertical" role="group"
+                                            aria-label="Vertical radio toggle button group">
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio3">AM</label>
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio4">PM</label>
+                                        </div>
+                                    </div> -->
+
+
+                                </div>
+                            </div>
+                            <div class="devicereports">
+                                <span class="ydrep">
+                                    <img src="img/survey/clock.svg" alt="icon">
+                                    Your device reports
+                                </span>
+                                <div class="triedtosleep">
+                                    <div class="triedtosleep__img">
+                                        <img src="img/survey/moon.svg" alt="img">
+                                    </div>
+                                    <div class="triedtosleep__descr">
+                                        <p>2h 5m</p>
+                                        <a href="#" class="arrtext">
+                                            Tried to Sleep
+                                            <img src="img/survey/rwharr.svg" alt="arrow">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <p>Note: Wearable data may vary.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="stepssection__nav">
+                            <a href="#" class="prevst"><img src="img/survey/prevstep.svg" alt="prev"> Back</a>
+                            <a href="#" class="nextst">Next <img src="img/survey/nextstep.svg" alt="next"></a>
+                        </div>
                     </div>
+
+                    <!-- step 4 -->
+                    <div class="sectstep hide sectstep4">
+                        <div>
+                            <div class="imgwrap">
+                                <img src="img/survey/img-q4.png" alt="img">
+                            </div>
+                            <p class="questiontext">
+                                4. How many times did you wake up between falling asleep and getting up for the day?
+                            </p>
+                            <div class="sharetime">
+                                <p>
+                                    Enter the total times you woke up during the night before getting up. Include any
+                                    brief awakenings.
+                                </p>
+                                <div class="timesection timesection__times">
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                    </div>
+                                    <p class="timesection__rtext">Times</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="stepssection__nav">
+                            <a href="#" class="prevst"><img src="img/survey/prevstep.svg" alt="prev"> Back</a>
+                            <a href="#" class="nextst">Next <img src="img/survey/nextstep.svg" alt="next"></a>
+                        </div>
+                    </div>
+
+                    <!-- step 5 -->
+                    <div class="sectstep hide sectstep5">
+                        <div>
+                            <div class="imgwrap">
+                                <img src="img/survey/img-q5.png" alt="img">
+                            </div>
+                            <p class="questiontext">
+                                5. How long, in total, were you awake during the night?
+                            </p>
+                            <div class="sharetime">
+                                <p>
+                                    Enter the total time you were awake during the night in minutes.
+                                </p>
+                                <div class="timesection">
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Hour</p>
+                                    </div>
+
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Minute</p>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="devicereports">
+                                <span class="ydrep">
+                                    <img src="img/survey/clock.svg" alt="icon">
+                                    Your device reports
+                                </span>
+                                <div class="triedtosleep">
+                                    <div class="triedtosleep__img">
+                                        <img src="img/survey/moon.svg" alt="img">
+                                    </div>
+                                    <div class="triedtosleep__descr">
+                                        <p>2h 5m</p>
+                                        <a href="#" class="arrtext">
+                                            Tried to Sleep
+                                            <img src="img/survey/rwharr.svg" alt="arrow">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <p>Note: Wearable data may vary.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="stepssection__nav">
+                            <a href="#" class="prevst"><img src="img/survey/prevstep.svg" alt="prev"> Back</a>
+                            <a href="#" class="nextst">Next <img src="img/survey/nextstep.svg" alt="next"></a>
+                        </div>
+                    </div>
+
+                    <!-- step 6 -->
+                    <div class="sectstep hide sectstep6">
+                        <div>
+                            <div class="imgwrap">
+                                <img src="img/survey/img-q6.png" alt="img">
+                            </div>
+                            <p class="questiontext">
+                                6. What  time did you wake up for the day?
+                            </p>
+                            <div class="sharetime">
+                                <p>
+                                    Please share the time in hours and minutes.
+                                </p>
+                                <div class="timesection">
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Hour</p>
+                                    </div>
+
+                                    <div class="timesection__wrapper">
+                                        <div class="timesection__inputs">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                            <input class="number_input" inputmode="numeric" type="number" min="0"
+                                                max="9" placeholder="">
+                                        </div>
+                                        <p>Minute</p>
+                                    </div>
+
+                                    <div class="ampm">
+                                        <div class="btn-group-vertical" role="group"
+                                            aria-label="Vertical radio toggle button group">
+                                            <input type="radio" class="btn-check" name="vbtn-radio6" id="vbtn-radio6"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio6">AM</label>
+                                            <input type="radio" class="btn-check" name="vbtn-radio6" id="vbtn-radio7"
+                                                autocomplete="off">
+                                            <label class="btn" for="vbtn-radio7">PM</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="devicereports">
+                                <span class="ydrep">
+                                    <img src="img/survey/clock.svg" alt="icon">
+                                    Your device reports
+                                </span>
+                                <div class="triedtosleep">
+                                    <div class="triedtosleep__img">
+                                        <img src="img/survey/sun.svg" alt="img">
+                                    </div>
+                                    <div class="triedtosleep__descr">
+                                        <p>09:30 <span>AM</span></p>
+                                        <a href="#" class="arrtext">
+                                            Wake-up Time
+                                            <img src="img/survey/rwharr.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>Note: Wearable data may vary.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="stepssection__nav">
+                            <a href="#" class="prevst"><img src="img/survey/prevstep.svg" alt="prev"> Back</a>
+                            <a href="#" class="nextst">Next <img src="img/survey/nextstep.svg" alt="next"></a>
+                        </div>
+                    </div>
+
                 </div>
-
-
-
-
             </div>
-
 
         </div>
 

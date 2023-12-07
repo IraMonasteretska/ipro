@@ -602,7 +602,7 @@ input[type=number] {
     }
 
     .questiontext {
-        font-size: 25px;
+        font-size: 24px;
         color: #fff;
         margin-bottom: 16px;
     }
@@ -802,12 +802,12 @@ input[type=number] {
 
 .triedtosleep {
     display: flex;
-    align-items: center;
 
     .triedtosleep__img {
         width: 100%;
         max-width: 40px;
         flex: 0 0 40px;
+        padding-top: 8px;
 
         img {
             max-width: 100%;
@@ -861,6 +861,31 @@ input[type=number] {
     padding-bottom: 30px;
 }
 
+.devicereports > p {
+    font-size: 10px;
+    margin: 15px 0 0 0;
+    color: #fff;
+}
+
+.timesection.timesection__times {
+    align-items: flex-end;
+
+    .timesection__wrapper:first-child:after {
+        display: none;
+    }
+}
+
+.sectstep .sharetime .timesection__rtext {
+    font-size: 20px;
+    color: #fff;
+    line-height: 180%;
+    margin: 0;
+    padding-left: 8px;
+    font-weight: 400;
+}
+
+
+
 
 
 
@@ -876,6 +901,38 @@ input[type=number] {
 .stepsboxes-2 {
     span {
         &:nth-child(-n+2) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-3 {
+    span {
+        &:nth-child(-n+3) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-4 {
+    span {
+        &:nth-child(-n+4) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-5 {
+    span {
+        &:nth-child(-n+5) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-6 {
+    span {
+        &:nth-child(-n+6) {
             background: #EB9B39;
         }
     }
