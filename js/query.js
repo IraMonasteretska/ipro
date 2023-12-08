@@ -344,4 +344,12 @@ $(document).ready(function () {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+
+    // styled select
+    if ($('.styledselect').length) {
+        $('.styledselect').select2({
+            minimumResultsForSearch: -1,
+            dropdownCssClass: "headerselectdropdown"
+        });
+    }
 });

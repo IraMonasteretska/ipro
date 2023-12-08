@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    // header circle
     if ($('.chartdays').length) {
         var ctx = document.getElementById('myChart').getContext('2d');
         var myDoughnutChart = new Chart(ctx, {
@@ -28,10 +29,8 @@ $(document).ready(function () {
         });
     }
 
-
-    // q1 - time
+    // time
     const inputsNL = document.querySelectorAll('.number_input');
-
     const inputsList = Array.prototype.slice.call(inputsNL);
 
     inputsList.forEach((input, index) => {
@@ -55,174 +54,7 @@ $(document).ready(function () {
         })
     })
 
-
-
-
-    // steps
-    // NEXT
-    // $('.sectstep1 .nextst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep2').removeClass('hide');
-
-    //     $('.actualstep').text(2);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-2');
-    // })
-
-    // $('.sectstep2 .nextst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep3').removeClass('hide');
-
-    //     $('.actualstep').text(3);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-3');
-    // })
-
-    // $('.sectstep3 .nextst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep4').removeClass('hide');
-
-    //     $('.actualstep').text(4);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-4');
-    // })
-
-    // $('.sectstep4 .nextst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep5').removeClass('hide');
-
-    //     $('.actualstep').text(5);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-5');
-    // })
-
-    // $('.sectstep5 .nextst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep6').removeClass('hide');
-
-    //     $('.actualstep').text(6);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-6');
-    // })
-
-
-
-
-
-    // function goToStep(step) {
-    //     $('.sectstep').addClass('hide');
-
-    //     var nextStepClass = '.sectstep' + step;
-    //     $(nextStepClass).removeClass('hide');
-
-    //     $('.actualstep').text(step);
-
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-' + step);
-    // }
-
-    // $('.sectstep1 .nextst').click(function () {
-    //     goToStep(2);
-    // });
-
-    // $('.sectstep2 .nextst').click(function () {
-    //     goToStep(3);
-    // });
-
-    // $('.sectstep3 .nextst').click(function () {
-    //     goToStep(4);
-    // });
-
-    // $('.sectstep4 .nextst').click(function () {
-    //     goToStep(5);
-    // });
-
-    // $('.sectstep5 .nextst').click(function () {
-    //     goToStep(6);
-    // });
-
-
-
-
-
-
-    // PREV
-    // $('.sectstep2 .prevst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep1').removeClass('hide');
-
-    //     $('.actualstep').text(1);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-1');
-
-    // });
-    // $('.sectstep3 .prevst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep2').removeClass('hide');
-
-    //     $('.actualstep').text(2);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-2');
-
-    // });
-
-    // $('.sectstep4 .prevst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep3').removeClass('hide');
-
-    //     $('.actualstep').text(3);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-3');
-
-    // });
-
-    // $('.sectstep5 .prevst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep4').removeClass('hide');
-
-    //     $('.actualstep').text(4);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-4');
-
-    // });
-
-    // $('.sectstep6 .prevst').click(function () {
-    //     $('.sectstep').addClass('hide');
-    //     $('.sectstep5').removeClass('hide');
-
-    //     $('.actualstep').text(5);
-    //     $('.stepsboxes').removeClass(function (index, className) {
-    //         return (className.match(/(^|\s)stepsboxes-\S+/g) || []).join(' ');
-    //     });
-    //     $('.stepsboxes').addClass('stepsboxes-5');
-
-    // });
-
-
-
-
-
-
+    // Steps function
     function goToStep(step) {
         $('.sectstep').addClass('hide');
 
@@ -258,6 +90,22 @@ $(document).ready(function () {
         goToStep(6);
     });
 
+    $('.sectstep6 .nextst').click(function () {
+        goToStep(7);
+    });
+
+    $('.sectstep7 .nextst').click(function () {
+        goToStep(8);
+    });
+
+    $('.sectstep8 .nextst').click(function () {
+        goToStep(9);
+    });
+
+    $('.sectstep9 .nextst').click(function () {
+        goToStep(10);
+    });
+
     //prev
     $('.sectstep2 .prevst').click(function () {
         goToStep(1);
@@ -279,18 +127,20 @@ $(document).ready(function () {
         goToStep(5);
     });
 
+    $('.sectstep7 .prevst').click(function () {
+        goToStep(6);
+    });
 
+    $('.sectstep8 .prevst').click(function () {
+        goToStep(7);
+    });
 
+    $('.sectstep9 .prevst').click(function () {
+        goToStep(8);
+    });
 
-
-
-
-
-
-
-
-
-
-
+    $('.sectstep10 .prevst').click(function () {
+        goToStep(9);
+    });
 
 })

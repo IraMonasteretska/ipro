@@ -673,6 +673,11 @@ input[type=number] {
                 text-align: center;
                 font-size: 24px;
                 font-weight: 500;
+                transition: 0.3s;
+
+                &:focus {
+                    border-color: #fff;
+                }
             }
 
 
@@ -692,6 +697,10 @@ input[type=number] {
             font-size: 16px;
             font-weight: 500;
             letter-spacing: 0.15px;
+
+            &:hover {
+                color: #fff;
+            }
         }
 
         input {
@@ -703,14 +712,6 @@ input[type=number] {
             }
         }
     }
-
-
-
-
-
-
-
-
 }
 
 .sectstep {
@@ -861,7 +862,7 @@ input[type=number] {
     padding-bottom: 30px;
 }
 
-.devicereports > p {
+.devicereports>p {
     font-size: 10px;
     margin: 15px 0 0 0;
     color: #fff;
@@ -883,6 +884,157 @@ input[type=number] {
     padding-left: 8px;
     font-weight: 400;
 }
+
+.sectstep9 {
+    .questiontext {
+        padding-top: 20px;
+    }
+}
+
+.ratesecrionwrap {
+    margin-top: 25px;
+
+    .ratesecrion {
+        display: flex;
+        justify-content: space-between;
+
+        .ratesecrion__radio {
+            input {
+                display: none;
+
+                &:checked {
+                    &+label {
+                        background: rgba(255, 255, 255);
+                        color: #050835;
+                    }
+                }
+            }
+        }
+
+        label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 39px;
+            height: 46px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 114%;
+            cursor: pointer;
+            transition: 0.3s;
+            position: relative;
+
+            &.one {
+                border-bottom: 4px solid #FF5858;
+            }
+
+            &.two {
+                border-bottom: 4px solid rgba(255, 88, 88, 0.70);
+            }
+
+            &.three {
+                border-bottom: 4px solid #D6AD6F;
+            }
+
+            &.four {
+                border-bottom: 4px solid #FFBE5C;
+            }
+
+            &.five {
+                border-bottom: 4px solid rgba(252, 255, 92, 0.40);
+            }
+
+            &.six {
+                border-bottom: 4px solid rgba(206, 234, 89, 0.60);
+            }
+
+            &.seven {
+                border-bottom: 4px solid rgba(223, 255, 94, 0.91);
+            }
+
+            &.eight {
+                border-bottom: 4px solid rgba(49, 255, 16, 0.40);
+            }
+
+            &.nine {
+                border-bottom: 4px solid rgba(49, 255, 16, 0.60);
+            }
+
+            &.ten {
+                border-bottom: 4px solid #31FF10;
+            }
+        }
+
+
+
+
+
+
+    }
+
+    .ratesecrion__bott {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+
+        p {
+            font-size: 12px;
+            margin: 0;
+            font-weight: 500;
+            line-height: 133%;
+            letter-spacing: 0.5px;
+            max-width: 100px;
+            color: #fff;
+        }
+    }
+
+}
+
+.rating {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    text-transform: capitalize;
+    padding: 0 50px 8%;
+    color: gray;
+
+    label {
+        display: inline-block;
+        float: right;
+        padding: 0;
+        font-size: 50px;
+        cursor: pointer;
+
+        svg path {
+            transition: 0.3s;
+        }
+
+        &:hover {
+            svg path {
+                fill: orange;
+            }
+
+            &~*svg {
+                path {
+                    fill: orange;
+                }
+            }
+        }
+    }
+
+    input {
+        &:checked~label svg {
+            path {
+                fill: #EB9B39;
+            }
+        }
+    }
+}
+
+
 
 
 
@@ -933,6 +1085,38 @@ input[type=number] {
 .stepsboxes-6 {
     span {
         &:nth-child(-n+6) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-7 {
+    span {
+        &:nth-child(-n+7) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-8 {
+    span {
+        &:nth-child(-n+8) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-9 {
+    span {
+        &:nth-child(-n+9) {
+            background: #EB9B39;
+        }
+    }
+}
+
+.stepsboxes-10 {
+    span {
+        &:nth-child(-n+10) {
             background: #EB9B39;
         }
     }
@@ -1005,4 +1189,26 @@ input[type=number] {
         }
     }
 
+    .ratesecrionwrap .ratesecrion label {
+        width: 30px;
+        height: 42px;
+        font-size: 14px;
+        border-width: 1px;
+        border-bottom-width: 3px !important;
+    }
+
+    .rating {
+        padding: 0 25px;
+    }
+}
+
+@media(max-width:360.8px) {
+    .ratesecrionwrap .ratesecrion label {
+        width: 26px;
+        height: 38px;
+    }
+
+    .rating {
+        padding: 0 5px;
+    }
 }
