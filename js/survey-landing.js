@@ -106,6 +106,15 @@ $(document).ready(function () {
         goToStep(10);
     });
 
+    $('.sectstep10 .nextst').click(function () {
+        goToStep(11);
+    });
+
+    $('.sectstep11 .nextst').click(function () {
+        goToStep(12);
+    });
+
+
     //prev
     $('.sectstep2 .prevst').click(function () {
         goToStep(1);
@@ -142,5 +151,29 @@ $(document).ready(function () {
     $('.sectstep10 .prevst').click(function () {
         goToStep(9);
     });
+
+    $('.sectstep11 .prevst').click(function () {
+        goToStep(10);
+    });
+
+    $('.sectstep12 .prevst').click(function () {
+        goToStep(11);
+    });
+
+
+
+    $('.sectstep12 .nextst').click(function () {
+        $('.sectstep').addClass('hide');
+        $('.snapshot').removeClass('hide');
+    });
+
+    $('.snapshot .prevst').click(function(){
+        $('.sectstep').addClass('hide');
+        $('.sectstep12').removeClass('hide');
+    });
+
+
+
+
 
 })

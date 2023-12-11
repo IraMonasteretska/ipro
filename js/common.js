@@ -70,11 +70,13 @@ $(document).ready(function () {
 
 
     // Sort table
-    let table = new DataTable('#sorttab', {
-        searching: false,
-        paging: false,
-        info: false,
-    });
+    if ($('#sorttab').length) {
+        let table = new DataTable('#sorttab', {
+            searching: false,
+            paging: false,
+            info: false,
+        });
+    }
 
     // tooltips
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -82,19 +84,19 @@ $(document).ready(function () {
 
 
     // mobile - show sidebar (enroll participant)
-    $('.infosidebar').click(function(){
+    $('.infosidebar').click(function () {
         $('.inforightbar').addClass('show');
     });
 
-    $('.arrowbtn').click(function(){
+    $('.arrowbtn').click(function () {
         $('.inforightbar').removeClass('show');
     });
-    
+
     $(document).click(function (event) {
         let $target = $(event.target);
         if (!$target.closest('.inforightbar ').length && !$target.closest('.infosidebar ').length) {
             $('.inforightbar').removeClass('show');
         }
     });
-    
+
 });
