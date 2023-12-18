@@ -352,4 +352,14 @@ $(document).ready(function () {
             dropdownCssClass: "headerselectdropdown"
         });
     }
+
+    if ($('.dttable').length) {
+        let table = new DataTable('.dttable', {
+            searching: false,
+            paging: false,
+            info: false,
+        });
+    }
+
+    
 });

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 .querypage {
     min-height: 100vh;
     background: #f5f5f9;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 // sidebar
@@ -416,7 +418,8 @@ body {
             display: inline-block;
             vertical-align: middle;
 
-            a, button {
+            a,
+            button {
                 text-decoration: none;
                 font-size: 14px;
                 color: #525251;
@@ -475,6 +478,11 @@ body {
         .nav-link {
             width: 100%;
             text-align: left;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 
@@ -580,6 +588,10 @@ body {
             th {
                 padding-left: 20px;
                 min-width: 120px;
+
+                &:hover {
+                    mix-blend-mode: multiply;
+                }
             }
         }
 
@@ -676,7 +688,6 @@ body {
     font-size: 14px;
 }
 
-
 .tablewrapper {
     position: relative;
 }
@@ -687,6 +698,7 @@ body {
     right: 0;
     margin: 0 auto;
     width: 300px;
+    z-index: 2;
 
     .cancel {
         outline: none;
@@ -723,20 +735,30 @@ body {
     }
 }
 
-.query-switch {
+// data table steles
+.dttable {
+    .no-sort {
+        pointer-events: none;
 
+        &::after,
+        &::before {
+            display: none !important;
+        }
+    }
+
+    thead th {
+        background: #EFF2F7;
+        padding: 15px !important;
+    }
+
+    &.no-footer {
+        border-bottom: none !important;
+    }
+
+    &.table>:not(caption)>*>* {
+        border-color: rgba(0, 0, 0, 0.1);
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media(max-width:1600.8px) {
 
@@ -1093,6 +1115,5 @@ body {
     .query-tabssection table {
         min-width: 700px;
     }
-
 
 }

@@ -7,6 +7,7 @@
     <title>Query </title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -181,26 +182,6 @@
                         </div>
                     </div>
 
-
-
-
-
-                    <!-- <div class="query-switch">
-                        <ul>
-                            <li>
-                                <a href="#" class="active">My Queries</a>
-                            </li>
-                            <li>
-                                <a href="#">All Queries</a>
-                            </li>
-                        </ul>
-                    </div> -->
-
-
-
-
-
-
                     <div class="query-switch">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -215,7 +196,6 @@
                             </li>
                         </ul>
                     </div>
-                    
 
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
@@ -224,8 +204,8 @@
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
-                                            data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane"
-                                            aria-selected="true">
+                                            data-bs-target="#all-tab-pane" type="button" role="tab"
+                                            aria-controls="all-tab-pane" aria-selected="true">
                                             <div class="tabbtn">
                                                 <span class="tabimg">
                                                     <img src="img/query/003-folder.png" alt="img">
@@ -298,7 +278,7 @@
                                         </button>
                                     </li>
                                 </ul>
-        
+
                                 <div class="downloadsection">
                                     <a href="#">
                                         <img src="img/query/printer.svg" alt="icon">
@@ -310,20 +290,20 @@
                                         <img src="img/query/pdf.svg" alt="icon">
                                     </a>
                                 </div>
-        
+
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
                                         aria-labelledby="all-tab" tabindex="0">
-        
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -347,7 +327,7 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -438,7 +418,7 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -512,20 +492,20 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
-                                    <div class="tab-pane fade" id="opened-tab-pane" role="tabpanel" aria-labelledby="opened-tab"
-                                        tabindex="0">
-        
+                                    <div class="tab-pane fade" id="opened-tab-pane" role="tabpanel"
+                                        aria-labelledby="opened-tab" tabindex="0">
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -549,7 +529,7 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -572,26 +552,26 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
                                     <div class="tab-pane fade" id="replied-tab-pane" role="tabpanel"
                                         aria-labelledby="replied-tab" tabindex="0">
-        
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -644,20 +624,20 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
-                                    <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel" aria-labelledby="closed-tab"
-                                        tabindex="0">
-        
+                                    <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel"
+                                        aria-labelledby="closed-tab" tabindex="0">
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -710,20 +690,20 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
                                     <div class="tab-pane fade" id="reopened-tab-pane" role="tabpanel"
                                         aria-labelledby="reopened-tab" tabindex="0">
-        
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -774,7 +754,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
                                 </div>
                             </div>
@@ -785,8 +765,8 @@
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active" id="alls-tab" data-bs-toggle="tab"
-                                            data-bs-target="#alls-tab-pane" type="button" role="tab" aria-controls="alls-tab-pane"
-                                            aria-selected="true">
+                                            data-bs-target="#alls-tab-pane" type="button" role="tab"
+                                            aria-controls="alls-tab-pane" aria-selected="true">
                                             <div class="tabbtn">
                                                 <span class="tabimg">
                                                     <img src="img/query/003-folder.png" alt="img">
@@ -859,7 +839,7 @@
                                         </button>
                                     </li>
                                 </ul>
-        
+
                                 <div class="downloadsection">
                                     <a href="#">
                                         <img src="img/query/printer.svg" alt="icon">
@@ -871,20 +851,20 @@
                                         <img src="img/query/pdf.svg" alt="icon">
                                     </a>
                                 </div>
-        
+
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="alls-tab-pane" role="tabpanel"
                                         aria-labelledby="alls-tab" tabindex="0">
-        
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -908,7 +888,7 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -999,7 +979,7 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1073,20 +1053,20 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
-                                    <div class="tab-pane fade" id="openeds-tab-pane" role="tabpanel" aria-labelledby="openeds-tab"
-                                        tabindex="0">
-        
+                                    <div class="tab-pane fade" id="openeds-tab-pane" role="tabpanel"
+                                        aria-labelledby="openeds-tab" tabindex="0">
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -1110,7 +1090,7 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1133,26 +1113,26 @@
                                                             </span>
                                                         </td>
                                                         <td>
-        
+
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
                                     <div class="tab-pane fade" id="replieds-tab-pane" role="tabpanel"
                                         aria-labelledby="replieds-tab" tabindex="0">
-        
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -1205,20 +1185,20 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
-                                    <div class="tab-pane fade" id="closeds-tab-pane" role="tabpanel" aria-labelledby="closeds-tab"
-                                        tabindex="0">
-        
+                                    <div class="tab-pane fade" id="closeds-tab-pane" role="tabpanel"
+                                        aria-labelledby="closeds-tab" tabindex="0">
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -1271,20 +1251,20 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
                                     <div class="tab-pane fade" id="reopeneds-tab-pane" role="tabpanel"
                                         aria-labelledby="reopeneds-tab" tabindex="0">
-        
+
                                         <div class="tablewrapper">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover table-striped dttable sortable">
                                                 <thead>
                                                     <tr>
                                                         <th>Query description</th>
                                                         <th>Raised on</th>
                                                         <th>Raised by</th>
                                                         <th>status</th>
-                                                        <th></th>
+                                                        <th class="no-sort"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -1335,19 +1315,17 @@
                                                 </tbody>
                                             </table>
                                         </div>
-        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </main>
-
-
 
     <!-- Modal -->
     <div class="modal fade formmodal" id="addquery" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1452,20 +1430,12 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/popper.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/lib/select2.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/super-build/ckeditor.js"></script>
+    <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script src="js/query.js"></script>
     <script src="js/common.js"></script>
 </body>
