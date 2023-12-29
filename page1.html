@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page </title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="overviewwrapper">
+            <div class="overview__header">
+                <div class="overview__header-leftbox">
+                    <p>Company: All Companies</p>
+                    <p>Protocol: All Protocols</p>
+                </div>
+                <div class="overview__header-searchbox">
+                    <div class="searchbox">
+                        <div class="inputfield">
+                            <input type="text" placeholder="Search">
+                            <button class="searchbtn">
+                                <img src="img/query/search.png" alt="search">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview__header-userinfo">
+                    <div class="qhuserblock__ava" style="background: #374d73;">
+                        <span>NK</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/query/notification.png" alt="icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/query/editing.png" alt="icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/query/fullscreen.png" alt="icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="overviewsect">
+                <div class="overviewsect__title">
+                    <p>Overview</p>
+                </div>
+                <div class="overviewsect__cards">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="overviewbox"
+                                style="background: linear-gradient(90deg, rgba(162,221,233,1) 0%, rgba(227,245,249,1) 25%, rgba(175,225,236,1) 100%);">
+                                <div class="overviewbox__topsect">
+                                    <p class="count">11</p>
+                                    <p class="title">Announcement</p>
+                                    <ul>
+                                        <li>
+                                            5 System
+                                        </li>
+                                        <li>
+                                            6 Protocol
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="overviewbox__bottsect">
+                                    <a href="#">
+                                        View
+                                        <img src="img/overview/right-arr.png" alt="arr">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="overviewbox"
+                                style="background: linear-gradient(90deg, rgba(185,209,240,1) 0%, rgba(232,241,250,1) 25%, rgba(196,217,242,1) 100%);">
+                                <div class="overviewbox__topsect">
+                                    <p class="count">10</p>
+                                    <p class="title">Recent Transfer</p>
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/check.png" alt="icon">
+                                            </span>
+                                            6 Successful
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/dangeric.png" alt="icon">
+                                            </span>
+                                            4 Errors
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="overviewbox__bottsect">
+                                    <a href="#">
+                                        View
+                                        <img src="img/overview/right-arr.png" alt="arr">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="overviewbox"
+                                style="background: linear-gradient(90deg, rgba(234,198,220,1) 0%, rgba(246,233,241,1) 25%, rgba(238,206,225,1) 100%);">
+                                <div class="overviewbox__topsect">
+                                    <p class="count">7</p>
+                                    <p class="title">Query Center</p>
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/file.png" alt="icon">
+                                            </span>
+                                            6 Open
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/ui.png" alt="icon">
+                                            </span>
+                                            6 Reopen
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/refreshing.png" alt="icon">
+                                            </span>
+                                            3 Replied
+                                        </li>
+                                        <li>
+                                            2 Awaiting Reply
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="overviewbox__bottsect">
+                                    <a href="#">
+                                        View
+                                        <img src="img/overview/right-arr.png" alt="arr">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="overviewbox"
+                                style="background: linear-gradient(90deg, rgba(218,214,243,1) 0%, rgba(234,232,249,1) 25%, rgba(223,219,245,1) 100%);">
+                                <div class="overviewbox__topsect">
+                                    <p class="count">12</p>
+                                    <p class="title">Hepl Desk Center</p>
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/file.png" alt="icon">
+                                            </span>
+                                            1 Open
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/ui.png" alt="icon">
+                                            </span>
+                                            2 Reopen
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/refreshing.png" alt="icon">
+                                            </span>
+                                            3 InProgress
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/check.png" alt="icon">
+                                            </span>
+                                            2 Closed
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/overview/refreshing.png" alt="icon">
+                                            </span>
+                                            4 Resolved
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="overviewbox__bottsect">
+                                    <a href="#">
+                                        View
+                                        <img src="img/overview/right-arr.png" alt="arr">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fileimport">
+                <div class="overviewsect__title">
+                    <p>File Import</p>
+                </div>
+
+                <div class="importtabs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#tab1-pane"
+                                type="button" role="tab" aria-controls="tab1-pane" aria-selected="true">
+                                <ul class="importtabs__icons">
+                                    <li>
+                                        <img src="img/overview/tbic1.png" alt="icon">
+                                        (300)
+                                    </li>
+                                </ul>
+                                Database
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#tab2-pane"
+                                type="button" role="tab" aria-controls="tab2-pane" aria-selected="false">
+                                <ul class="importtabs__icons">
+                                    <li>
+                                        <img src="img/overview/tbic4.png" alt="icon">
+                                        (3)
+                                    </li>
+                                    <li>
+                                        <img src="img/overview/tbic2.png" alt="icon">
+                                        (3)
+                                    </li>
+                                </ul>
+                                Import
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#tab3-pane"
+                                type="button" role="tab" aria-controls="tab3-pane" aria-selected="false">
+                                <ul class="importtabs__icons">
+                                    <li>
+                                        <img src="img/overview/tbic4.png" alt="icon">
+                                        (3)
+                                    </li>
+                                    <li>
+                                        <img src="img/overview/tbic2.png" alt="icon">
+                                        (3)
+                                    </li>
+                                </ul>
+                                Assign
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#tab4-pane"
+                                type="button" role="tab" aria-controls="tab4-pane" aria-selected="false">
+                                <ul class="importtabs__icons">
+                                    <li>
+                                        <img src="img/overview/tbic4.png" alt="icon">
+                                        (5)
+                                    </li>
+                                    <li>
+                                        <img src="img/overview/tbic3.png" alt="icon">
+                                        (3)
+                                    </li>
+                                    <li>
+                                        <img src="img/overview/tbic2.png" alt="icon">
+                                        (3)
+                                    </li>
+                                </ul>
+                                With Scorer
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab5" data-bs-toggle="tab" data-bs-target="#tab5-pane"
+                                type="button" role="tab" aria-controls="tab5-pane" aria-selected="false">
+                                <ul class="importtabs__icons">
+                                    <li>
+                                        <img src="img/overview/tbic4.png" alt="icon">
+                                        (3)
+                                    </li>
+                                    <li>
+                                        <img src="img/overview/tbic3.png" alt="icon">
+                                        (3)
+                                    </li>
+                                    <li>
+                                        <img src="img/overview/tbic2.png" alt="icon">
+                                        (3)
+                                    </li>
+                                </ul>
+                                Quality Check
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab6" data-bs-toggle="tab" data-bs-target="#tab6-pane"
+                                type="button" role="tab" aria-controls="tab6-pane" aria-selected="false">
+                                <ul class="importtabs__icons">
+                                    <li>
+                                        <img src="img/overview/tbic1.png" alt="icon">
+                                        (3)
+                                    </li>
+                                </ul>
+                                Transfer
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab1-pane" role="tabpanel" aria-labelledby="tab1"
+                            tabindex="0">
+                            <div class="tablewrapper">
+                                <table class="table table-hover table-striped dttable sortable">
+                                    <thead>
+                                        <tr>
+                                            <th>Query description</th>
+                                            <th>Raised on</th>
+                                            <th>Raised by</th>
+                                            <th>status</th>
+                                            <th class="no-sort"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                    title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                    Can you explain the purpose of a polysomno...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                09/10/2023
+                                            </td>
+                                            <td>
+                                                Nihan-PM
+                                            </td>
+                                            <td>
+                                                <span class="statuslabel"
+                                                    style="color: #77de40; border: 1px solid #77de40;">
+                                                    opened
+                                                </span>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                    title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                    What are the key differences between in-lab...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                09/10/2023
+                                            </td>
+                                            <td>
+                                                Nihan-PM
+                                            </td>
+                                            <td>
+                                                <span class="statuslabel"
+                                                    style="color: #787aff; border: 1px solid #787aff;">
+                                                    replied
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="inflink">See Relies</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                    title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                    What are the key differences between in-lab...
+                                                </p>
+                                            </td>
+                                            <td>
+                                                09/10/2023
+                                            </td>
+                                            <td>
+                                                Nihan-PM
+                                            </td>
+                                            <td>
+                                                <span class="statuslabel"
+                                                    style="color: #64daf3; border: 1px solid #64daf3;">
+                                                    Closed
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="inflink">Reopen</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tablenav">
+                                <div class="tablenav__showpage">
+                                    Show
+                                    <select class="styledselect" name="protocol">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                        <option value="4">40</option>
+                                        <option value="5">50</option>
+                                    </select>
+                                    entries
+                                </div>
+                                <div class="tablenav__rightnav d-flex justify-content-end align-items-center">
+                                    <div class="selectpage">
+                                        <span>Select page</span>
+                                        <select class="styledselect" name="protocol">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="currentpage">
+                                        <p>1 -21 of 21</p>
+                                    </div>
+                                    <nav class="tablepagination" aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item prev disabled">
+                                                <a class="page-link" href="#">
+                                                    <img src="img/pagination-prev.svg" alt="next">
+                                                    Previous
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item next">
+                                                <a class="page-link" href="#">
+                                                    Next
+                                                    <img src="img/pagination-next.svg" alt="next">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2-pane" role="tabpanel" aria-labelledby="tab2" tabindex="0">
+                            Tab 2
+                        </div>
+                        <div class="tab-pane fade" id="tab3-pane" role="tabpanel" aria-labelledby="tab3" tabindex="0">
+                            Tab 3
+                        </div>
+                        <div class="tab-pane fade" id="tab4-pane" role="tabpanel" aria-labelledby="tab4" tabindex="0">
+                            Tab 4
+                        </div>
+                        <div class="tab-pane fade" id="tab5-pane" role="tabpanel" aria-labelledby="tab5" tabindex="0">
+                            Tab 5
+                        </div>
+                        <div class="tab-pane fade" id="tab6-pane" role="tabpanel" aria-labelledby="tab6" tabindex="0">
+                            Tab 6
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/select2.js"></script>
+    <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="js/overview.js"></script>
+    <script src="js/query.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

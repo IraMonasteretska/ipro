@@ -353,6 +353,7 @@ $(document).ready(function () {
         });
     }
 
+
     if ($('.dttable').length) {
         let table = new DataTable('.dttable', {
             searching: false,
