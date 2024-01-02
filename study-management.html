@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page </title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="css/lib/folders.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="stmanpage">
+            <div class="stmanpage__header">
+                <p class="title">Study Management</p>
+            </div>
+
+            <div class="stmanpage__body">
+                <div class="stmanpage__folderswrap">
+                    <div id="html" class="demo">
+                        <ul>
+                            <li data-jstree='{ "opened" : true }'>Root node
+                                <ul>
+                                    <li data-jstree='{ "selected" : true }'>Child node 1</li>
+                                    <li>Child node 2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="stmanpage__contentwrap">
+                    <div class="stmanpage__conthead">
+                        <div class="searchsect">
+                            <div class="inputfield">
+                                <input type="text" placeholder="Search Document">
+                            </div>
+                        </div>
+                        <div class="totalcount">
+                            <p>
+                                Total File Count: <span>30</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="stmanpage__contbody">
+                        <div class="tablewrapper">
+                            <table class="table table-hover dttable">
+                                <thead>
+                                    <tr>
+                                        <th>Document Name</th>
+                                        <th>Ver</th>
+                                        <th>Modified by</th>
+                                        <th>Modified On</th>
+                                        <th>Size</th>
+                                        <th>Owner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                T123FSKRVDKG9812.sss
+                                                <img class="publish-icon" src="img/studymanagement/unpublish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Shailesh Thanki
+                                        </td>
+                                        <td>
+                                            01/08/2021 03:39 AM
+                                        </td>
+                                        <td>
+                                            184.22 KB
+                                        </td>
+                                        <td>
+                                            Shailesh Thanki
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                T123FSKRVDKG9812.pdf
+                                                <img class="publish-icon" src="img/studymanagement/publish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Shailesh Thanki
+                                        </td>
+                                        <td>
+                                            01/08/2021 03:39 AM
+                                        </td>
+                                        <td>
+                                            184.22 KB
+                                        </td>
+                                        <td>
+                                            Shailesh Thanki
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                T123FSKRVDKG9812.zip
+                                                <img class="publish-icon" src="img/studymanagement/unpublish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V2
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            03/09/2021 01:30 AM
+                                        </td>
+                                        <td>
+                                            221 KB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                SDW234DSDS22.png
+                                                <img class="publish-icon" src="img/studymanagement/unpublish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            08/06/2022 05:30 PM
+                                        </td>
+                                        <td>
+                                            333 KB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                SDW234DSDS22
+                                                <img class="publish-icon" src="img/studymanagement/publish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            08/06/2022 05:30 PM
+                                        </td>
+                                        <td>
+                                            333 KB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                SDW234DSDS22.mp4
+                                                <img class="publish-icon" src="img/studymanagement/publish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            08/06/2022 05:30 PM
+                                        </td>
+                                        <td>
+                                            2.1 MB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                SDW234DSDS22.pptx
+                                                <img class="publish-icon" src="img/studymanagement/publish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            08/06/2022 05:30 PM
+                                        </td>
+                                        <td>
+                                            333 KB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                SDW234DSDS22.txt
+                                                <img class="publish-icon" src="img/studymanagement/unpublish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            08/06/2022 05:30 PM
+                                        </td>
+                                        <td>
+                                            52 KB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                SDW234DSDS22.docx
+                                                <img class="publish-icon" src="img/studymanagement/unpublish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            08/06/2022 05:30 PM
+                                        </td>
+                                        <td>
+                                            555 KB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="filetext">
+                                                SDW234DSDS22.xlsx
+                                                <img class="publish-icon" src="img/studymanagement/unpublish2.png" alt="img">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            V1
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                        <td>
+                                            08/06/2022 05:30 PM
+                                        </td>
+                                        <td>
+                                            52 KB
+                                        </td>
+                                        <td>
+                                            Sudershah Singh
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tablenav">
+                            <div class="tablenav__showpage">
+                                Show
+                                <select class="styledselect" name="protocol">
+                                    <option value="1">10</option>
+                                    <option value="2">20</option>
+                                    <option value="3">30</option>
+                                    <option value="4">40</option>
+                                    <option value="5">50</option>
+                                </select>
+                                entries
+                            </div>
+                            <div class="tablenav__rightnav d-flex justify-content-end align-items-center">
+                                <div class="selectpage">
+                                    <span>Select page</span>
+                                    <select class="styledselect" name="protocol">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div class="currentpage">
+                                    <p>1 -21 of 21</p>
+                                </div>
+                                <nav class="tablepagination" aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item prev disabled">
+                                            <a class="page-link" href="#">
+                                                <img src="img/pagination-prev.svg" alt="next">
+                                                Previous
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item next">
+                                            <a class="page-link" href="#">
+                                                Next
+                                                <img src="img/pagination-next.svg" alt="next">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="stmanpage__publishsect">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/studymanagement/publish.png" alt="img">
+                                        Publish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/studymanagement/unpublish.png" alt="img">
+                                        Unpublish
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </main>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/select2.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="js/lib/jstree.min.js"></script>
+    <!-- <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/plugins/contextmenu/jstree.contextmenu.js"></script> -->
+    <script src="js/common.js"></script>
+    <script src="js/studyman.js"></script>
+</body>
+
+</html>
+
+<!-- <p data-bs-toggle="tooltip" data-bs-html="true"
+                                                title="Query ID: 12345678 <br> Protocol: T123-1111">
+                                                Can you explain the purpose of a polysomno...
+                                            </p> -->
