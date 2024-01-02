@@ -13,7 +13,24 @@
 
 <body>
     <main class="main">
-        <div class="overviewwrapper">
+        <div class="overviewwrapper overviewwrapper__imp">
+
+            <div class="alertswrapper">
+                <div class="mngnotification">
+                    <img class="mngnotification__icon" src="img/overview/danger.png" alt="">
+                    <p>
+                        You have 3 unread announcements.
+                        <a href="#">
+                            See 3 unread announcements.
+                        </a>
+                    </p>
+                    <button class="mngnotification__close">
+                        <img src="img/overview/close.png" alt="close">
+                    </button>
+                </div>
+            </div>
+
+            
             <div class="overview__header">
                 <div class="overview__header-leftbox">
                     <p>Company: All Companies</p>
@@ -214,7 +231,7 @@
                                         (300)
                                     </li>
                                 </ul>
-                                Database
+                                <p>Database</p>
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -230,7 +247,8 @@
                                         (3)
                                     </li>
                                 </ul>
-                                Import
+                                <p>Import</p>
+                                <img class="tabbgarr" src="img/overview/arrowbgtab-first.png" alt="bg">
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -246,7 +264,8 @@
                                         (3)
                                     </li>
                                 </ul>
-                                Assign
+                                <p>Assign</p>
+                                <img class="tabbgarr" src="img/overview/arrowbgtab.png" alt="bg">
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -266,7 +285,8 @@
                                         (3)
                                     </li>
                                 </ul>
-                                With Scorer
+                                <p>With Scorer</p>
+                                <img class="tabbgarr" src="img/overview/arrowbgtab.png" alt="bg">
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -286,7 +306,8 @@
                                         (3)
                                     </li>
                                 </ul>
-                                Quality Check
+                                <p>Quality Check</p>
+                                <img class="tabbgarr" src="img/overview/arrowbgtab.png" alt="bg">
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -298,7 +319,8 @@
                                         (3)
                                     </li>
                                 </ul>
-                                Transfer
+                                <p>Transfer</p>
+                                <img class="tabbgarr" src="img/overview/arrowbgtab-last.png" alt="bg">
                             </button>
                         </li>
                     </ul>
@@ -459,6 +481,7 @@
         </div>
 
     </main>
+
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
