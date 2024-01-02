@@ -1,6 +1,6 @@
 .overviewwrapper {
     background: #f2f8fe;
-    padding: 30px;
+    padding: 26px 30px 30px 30px;
     min-height: 100vh;
 }
 
@@ -220,6 +220,37 @@
         padding-top: 20px;
     }
 
+    .nav-tabs .nav-item {
+        background: transparent;
+
+        .nav-link {
+            &.active {
+                background: transparent;
+
+                .tabbgarr {
+                    filter: drop-shadow(1px 1px 4px #8e8d8d);
+                }
+            }
+        }
+
+        &:first-child {
+            .nav-link {
+                background: #fff;
+            }
+
+            button {
+                  box-shadow: 1px 1px 1px #a8a8a8;
+                &:hover {
+                    box-shadow: 1px 1px 6px #8e8d8d;
+
+                }
+            }
+            
+        }
+
+        
+    }
+
     .nav-tabs {
         border: none !important;
         display: flex;
@@ -229,19 +260,52 @@
             width: 100%;
             max-width: 15%;
             flex: 0 0 15%;
-            border-right: 1px solid #b6e4ed;
+            // border-right: 1px solid #b6e4ed;
 
             button {
-                background: #fff;
+                
                 width: 100%;
                 border-radius: 0;
                 transition: 0.3s;
+               
+                position: relative;
+
+                .tabbgarr {
+                    transition: 0.3s;
+                    filter: drop-shadow(1px 1px 1px #a8a8a8);
+                }
 
                 &:hover {
-                    box-shadow: 0 6px 6px #c7c7c7;
+                    // box-shadow: 0 6px 6px #c7c7c7;
                     opacity: 1;
+
+                    .tabbgarr {
+                        filter: drop-shadow(1px 1px 4px #8e8d8d);
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                ul {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .tabbgarr {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    
                 }
             }
+
+
 
             &:nth-child(1) {
                 width: 100%;
@@ -378,6 +442,66 @@
 
 }
 
+.mngnotification {
+    background: rgba(253, 252, 245, 0.9);
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1600.8px) {
+
+    .overviewwrapper.overviewwrapper__imp {
+        .overview__header {
+            margin-bottom: 25px;
+        }
+
+        .overviewsect__title p {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .overviewbox .count {
+            font-size: 32px;
+            margin-bottom: 4px;
+        }
+
+        .overviewbox {
+            padding: 15px 25px;
+            min-height: 190px;
+        }
+
+        .overviewsect {
+            margin-bottom: 30px;
+        }
+
+        .overviewsect__title {
+            margin-bottom: 15px;
+        }
+
+        .overviewbox .title {
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .overviewbox ul li {
+            font-size: 13px;
+        }
+
+
+
+    }
+
+
+
+
+}
+
 @media(max-width:1440.8px) {
     .overviewbox ul li {
         max-width: 50%;
@@ -429,6 +553,20 @@
 
 }
 
+@media(max-width:1199.8px) {
+    .importtabs .nav-tabs .nav-item button p {
+        font-size: 14px;
+    }
+
+    .importtabs .nav-link .importtabs__icons li {
+        font-size: 12px;
+
+        img {
+            width: 12px;
+        }
+    }
+}
+
 @media(max-width:991.8px) {
     .importtabs .nav-tabs .nav-item:first-child {
         max-width: 100%;
@@ -447,20 +585,12 @@
         border-radius: 0;
     }
 
-    .importtabs .nav-tabs .nav-item {
-        border-bottom: 1px solid #b6e4ed;
-
-        &:first-child {
-            border-bottom: none;
-        }
-
-        &:last-child {
-            border-right: 1px solid #b6e4ed;
-        }
-    }
-
     .importtabs .nav-tabs .nav-item button {
         font-size: 18px;
+    }
+
+    .importtabs .nav-tabs .nav-item {
+        margin-bottom: 15px;
     }
 }
 
