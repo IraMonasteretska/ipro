@@ -73,10 +73,10 @@ $(document).ready(function () {
         'plugins': ['contextmenu', 'types'],
         'types': {
             'default': {
-                'icon': '../img/studymanagement/file6.png'
+                'icon': 'img/studymanagement/file6.png'
             },
             'custom': {
-                'icon': '../img/studymanagement/file1.png'
+                'icon': 'img/studymanagement/file1.png'
             }
         },
         'contextmenu': {
