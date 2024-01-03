@@ -114,7 +114,7 @@
     td {
         font-size: 15px;
         vertical-align: middle;
-        padding: 0.8rem 0.5rem;
+        padding: 15px 10px !important;
         position: relative;
 
         p {
@@ -132,18 +132,40 @@
     position: relative;
     padding-right: 30px;
     cursor: pointer;
+    padding-left: 40px;
 
     img {
         vertical-align: middle;
         width: 32px;
-    }
-
-    .publish-icon {
-        width: 24px;
         position: absolute;
-        right: 5px;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &.publish {
+        &::after {
+            background-image: url('../img/studymanagement/publish2.png');
+        }
+    }
+
+    &.unpublish {
+        &::after {
+            background-image: url('../img/studymanagement/unpublish2.png');
+        }
     }
 }
 
@@ -187,12 +209,11 @@
     }
 }
 
-
 .filecontextmenu {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    box-shadow: 0 0 6px #4b4b4b;
+    box-shadow: 0px 1px 4px #b4b4b4;
     width: 180px;
     border-radius: 5px;
     position: absolute;
@@ -247,4 +268,165 @@
 .jstree-default .jstree-anchor {
     padding: 5px;
     height: auto;
+}
+
+.vakata-context li>a {
+    color: #333;
+    font-size: 14px;
+}
+
+.vakata-context {
+    background: #fff;
+    border: none;
+    box-shadow: 2px 2px 4px #b4b4b4;
+
+    li>a>i:empty {
+        background-size: 18px !important;
+    }
+}
+
+.tablewrapper {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1600.8px) {
+    .stmanpage {
+        padding: 20px;
+    }
+
+    .stmanpage__header {
+        min-height: 50px;
+
+        .title {
+            font-size: 21px;
+        }
+    }
+
+    .stmanpage__body .stmanpage__folderswrap {
+        max-width: 260px;
+        flex: 0 0 260px;
+    }
+
+    .stmanpage__body .stmanpage__contentwrap {
+        max-width: calc(100% - 260px);
+        flex: 0 0 calc(100% - 260px);
+    }
+
+    .filetext:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .stmanpage__contentwrap thead th {
+        font-size: 14px;
+        padding: 15px 25px 15px 10px !important;
+    }
+
+    table.dataTable tbody td {
+        min-width: 70px;
+        font-size: 14px;
+    }
+
+    .filetext img {
+        width: 28px;
+    }
+
+    .stmanpage__publishsect ul li img {
+        width: 24px;
+        margin-right: 3px;
+    }
+
+    .stmanpage__contentwrap td {
+        padding: 12px 10px !important;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .stmanpage__contbody {
+        table {
+            min-width: 800px;
+
+            th {
+                vertical-align: middle;
+            }
+        }
+    }
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .stmanpage {
+        padding: 10px;
+    }
+
+    .stmanpage__body .stmanpage__folderswrap {
+        max-width: 240px;
+        flex: 0 0 240px;
+    }
+
+    .stmanpage__body .stmanpage__contentwrap {
+        max-width: calc(100% - 240px);
+        flex: 0 0 calc(100% - 240px);
+    }
+
+    .stmanpage__contbody {
+
+        .tablenav__rightnav {
+            flex-wrap: wrap;
+        }
+
+        .selectpage {
+            width: 100%;
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+
+        .currentpage {
+            width: 100%;
+            max-width: 50%;
+            flex: 0 0 50%;
+            text-align: right;
+        }
+
+        .tablepagination {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-top: 20px;
+           
+            ul {
+                justify-content: center;
+            }
+        }
+    }
+
+
 }

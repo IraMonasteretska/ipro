@@ -1,31 +1,5 @@
 $(document).ready(function () {
-    // $(".filetext").each(function () {
-    //     var filename = $(this).text().trim();
-    //     var extension = filename.split('.').pop().toLowerCase();
 
-    //     // if (extension === 'pdf') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/pdf.png');
-    //     // } else if (extension === 'xls' || extension === 'xlsx') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/xls.png');
-    //     // } else if (extension === 'txt') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/txt.png');
-    //     // } else if (extension === 'ppt') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/ppt.png');
-    //     // } else if (extension === 'pptx') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/powerpoint.png');
-    //     // } else if (extension === 'zip' || extension === 'rar') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/zip.png');
-    //     // } else if (extension === 'doc' || extension === 'docs') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/word.png');
-    //     // } else if (extension === 'mp4') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/music.png');
-    //     // } else if (extension === 'png' || extension === 'jpg' || extension === 'jpeg' || extension === 'svg') {
-    //     //     $(this).find('img').attr('src', 'img/studymanagement/image.png');
-    //     // }
-
-
-
-    // });
 
     $('.filetext').each(function () {
         var fileName = $(this).text().trim();
@@ -96,34 +70,50 @@ $(document).ready(function () {
     });
 
     $('#html').jstree({
-        // 'plugins': ['types'],
-        'plugins': ['contextmenu'],
+        'plugins': ['contextmenu', 'types'],
+        'types': {
+            'default': {
+                'icon': '../img/studymanagement/file6.png'
+            },
+            'custom': {
+                'icon': '../img/studymanagement/file1.png'
+            }
+        },
         'contextmenu': {
             'items': function (node) {
 
                 return {
                     'item1': {
                         'label': 'Permission',
+                        'icon': './img/studymanagement/pormission.png',
                         'action': function () {
 
                         },
                     },
                     'item2': {
                         'label': 'Notification',
+                        'icon': './img/studymanagement/notif.png',
                         'action': function () {
 
                         }
                     },
                     "item3": {
                         "label": "Copy to Drive",
+                        'icon': './img/studymanagement/copy.png',
                         'action': function () {
 
                         }
                     }
                 }
             }
-        }
+        },
     });
+
+
+
+
+
+
 
     if ($('.dttable').length) {
         let table = new DataTable('.dttable', {
@@ -137,10 +127,10 @@ $(document).ready(function () {
 
     // right click - menu
     $('.filetext').on('contextmenu', function (e) {
-        e.preventDefault(); 
-      
+        e.preventDefault();
+
         $('.filecontextmenu').removeClass('show');
-      
+
         $(this).next('.filecontextmenu').addClass('show');
     });
 
