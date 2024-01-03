@@ -105,19 +105,19 @@ $(document).ready(function () {
                     'item1': {
                         'label': 'Permission',
                         'action': function () {
-                            
+
                         },
                     },
                     'item2': {
                         'label': 'Notification',
                         'action': function () {
-                            
+
                         }
                     },
                     "item3": {
                         "label": "Copy to Drive",
                         'action': function () {
-                            
+
                         }
                     }
                 }
@@ -134,13 +134,25 @@ $(document).ready(function () {
         });
     }
 
-    // if ($('.styledselect').length) {
-    //     $('.styledselect').select2({
-    //         minimumResultsForSearch: -1,
-    //         dropdownCssClass: "headerselectdropdown"
-    //     });
-    // }
 
+    // right click - menu
+    $('.filetext').on('contextmenu', function (e) {
+        e.preventDefault(); 
+      
+        $('.filecontextmenu').removeClass('show');
+      
+        $(this).next('.filecontextmenu').addClass('show');
+    });
 
+    // $(document).on('click', function () {
+    //     $('.filecontextmenu').removeClass('show');
+    // });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.filecontextmenu').length && !$target.closest('.filetext').length) {
+            $('.filecontextmenu').removeClass('show');
+        }
+    });
 
 });

@@ -115,6 +115,7 @@
         font-size: 15px;
         vertical-align: middle;
         padding: 0.8rem 0.5rem;
+        position: relative;
 
         p {
             margin: 0;
@@ -130,6 +131,7 @@
 .filetext {
     position: relative;
     padding-right: 30px;
+    cursor: pointer;
 
     img {
         vertical-align: middle;
@@ -183,4 +185,66 @@
             }
         }
     }
+}
+
+
+.filecontextmenu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-shadow: 0 0 6px #4b4b4b;
+    width: 180px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2009;
+    left: 40px;
+    top: 40px;
+    background: #fff;
+    display: none;
+    overflow: hidden;
+
+    &.show {
+        display: inline-block;
+    }
+
+    li {
+        border-bottom: 1px solid #e7e7e7;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #212529;
+            font-size: 14px;
+            display: block;
+            padding: 5px 10px 5px 30px;
+            transition: 0.3s;
+            position: relative;
+
+            &:hover {
+                background: #417fbf;
+                color: #fff;
+            }
+
+            svg {
+                position: absolute;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+#kt_docs_jstree_customicons {
+    li {
+        line-height: 30px;
+    }
+}
+
+.jstree-default .jstree-anchor {
+    padding: 5px;
+    height: auto;
 }
