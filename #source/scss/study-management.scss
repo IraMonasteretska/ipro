@@ -217,7 +217,7 @@
     width: 180px;
     border-radius: 5px;
     position: absolute;
-    z-index: 2009;
+    z-index: 25;
     left: 40px;
     top: 40px;
     background: #fff;
@@ -303,7 +303,11 @@
     }
 }
 
-
+.stmanpage__body {
+    .select2-container {
+        z-index: 19 !important;
+    }
+}
 
 
 
@@ -421,12 +425,314 @@
             max-width: 100%;
             flex: 0 0 100%;
             margin-top: 20px;
-           
+
             ul {
                 justify-content: center;
             }
         }
     }
 
+
+}
+
+@media(max-width:767.8px) {
+
+    .stmanpage__body .stmanpage__folderswrap,
+    .stmanpage__body .stmanpage__contentwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .stmanpage__body .stmanpage__folderswrap {
+        padding: 10px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .stmanpage__header .title {
+        font-size: 18px;
+    }
+
+    .stmanpage__header {
+        min-height: initial;
+        padding: 8px 10px;
+        margin-bottom: 10px;
+    }
+
+    .stmanpage__body .stmanpage__folderswrap {
+        padding: 10px 0;
+    }
+
+    .jstree-default .jstree-anchor {
+        font-size: 14px;
+    }
+
+    .jstree-default .jstree-anchor {
+        padding: 3px 5px;
+    }
+
+    .stmanpage__conthead .searchsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+
+        input {
+            border: 1px solid #b8cce1;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        .inputfield {
+            margin-bottom: 20px;
+        }
+    }
+
+    .stmanpage__conthead .totalcount {
+        max-width: 100%;
+        flex: 0 0 100%;
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .stmanpage__body .stmanpage__contentwrap {
+        padding: 15px 0 10px 0;
+    }
+
+
+    .stmanpage__contbody .selectpage {
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+    }
+
+    .stmanpage__contbody .currentpage {
+        max-width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .stmanpage__publishsect ul {
+        justify-content: center;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+// Version 2
+.stmanpage.v2 {
+    background: #fff;
+    padding: 0;
+
+    .stmanpage__header {
+        min-height: auto;
+        background: transparent;
+        border: none;
+        padding: 0;
+
+        .title {
+            font-size: 32px;
+            padding: 0;
+        }
+    }
+
+    .stmanpage__body {
+        padding: 0;
+        border: none;
+        min-height: 100vh;
+    }
+
+    .stmanpage__conthead {
+        border-bottom: none;
+
+        .inputfield {
+            input {
+                border-bottom: 1px solid #2A3042;
+            }
+        }
+    }
+
+    .stmanpage__body .stmanpage__folderswrap {
+        border: none;
+        padding: 20px;
+        background: #2A3042;
+        border-radius: 0;
+    }
+
+    .folderlist {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li a {
+            margin-bottom: 5px;
+        }
+
+        i,
+        svg {
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0 0 0 15px;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            padding: 3px 5px;
+            border-radius: 3px;
+
+            &:hover {
+                background: rgba(216, 227, 238, 0.3);
+            }
+
+            &.active {
+                background: #2a4c6f;
+                color: #fff;
+            }
+        }
+    }
+
+    .stmanpage__contentwrap {
+        padding: 20px;
+    }
+
+    .tablenav .tablenav__rightnav {
+        padding-right: 0;
+    }
+
+    .tablenav .tablenav__showpage {
+        padding-left: 0;
+    }
+
+    .stmanpage__contentwrap thead th {
+        background: #2a3042;
+        color: #fff;
+    }
+
+    .stmanpage__contentwrap thead th:not(.no-sort):after {
+        background: url(../img/studymanagement/sort.png) no-repeat center/100%;
+    }
+
+    .stmanpage__contentwrap .table-hover>tbody>tr:hover>* {
+        --bs-table-bg-state: rgba(42, 48, 66, 0.1);
+    }
+
+    .filecontextmenu li a:hover {
+        background: #2A3042;
+    }
+
+
+
+}
+
+.foldercontmenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    padding: 5px 0;
+    z-index: 3;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 0 10px #333;
+    width: 160px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: calc(100% - 8px);
+        background: #999;
+        left: 30px;
+        top: 4px;
+        position: absolute;
+    }
+
+    li {
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            display: block;
+            padding: 5px 5px 5px 40px;
+            position: relative;
+            transition: 0.3s;
+
+            &:hover {
+                background: #2a30421f;
+            }
+
+
+            img {
+                width: 18px;
+                position: absolute;
+                left: 7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+@media(max-width:1600.8px) {
+    .stmanpage.v2 .stmanpage__header .title {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .stmanpage.v2 .stmanpage__body .stmanpage__folderswrap {
+        max-width: 230px;
+        flex: 0 0 230px;
+    }
+
+    .stmanpage.v2 .stmanpage__contentwrap {
+        max-width: calc(100% - 230px);
+        flex: 0 0 calc(100% - 230px);
+    }
+}
+
+@media(max-width:767.8px) {
+
+    .stmanpage.v2 .stmanpage__body .stmanpage__folderswrap,
+    .stmanpage.v2 .stmanpage__contentwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media(max-width:575.8px) {
+    .stmanpage.v2 .stmanpage__header .title {
+        font-size: 21px;
+    }
+
+    .stmanpage.v2 .stmanpage__conthead .inputfield input {
+        border: 1px solid #2A3042;
+    }
+
+    .stmanpage.v2 .stmanpage__contentwrap {
+        padding: 10px;
+    }
+
+    .stmanpage.v2 .stmanpage__body .stmanpage__folderswrap {
+        padding: 15px 10px;
+    }
 
 }

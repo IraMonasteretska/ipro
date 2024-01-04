@@ -15,26 +15,42 @@
 
 <body>
     <main class="main">
-        <div class="stmanpage">
-            <div class="stmanpage__header">
-                <p class="title">Study Management</p>
-            </div>
-
+        <div class="stmanpage v2">
             <div class="stmanpage__body">
                 <div class="stmanpage__folderswrap">
-                    <div id="html" class="demo">
-                        <ul>
-                            <li data-jstree='{ "opened" : true }'>Root node
-                                <ul>
-                                    <li data-jstree='{ "selected" : true }'>Child node 1</li>
-                                    <li>Child node 2</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="folderlist">
+                        <li>
+                            <a href="#" class="folder-link">
+                                <i class="fa-regular fa-folder-open"></i>
+                                T123-111
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#" class="folder-link">
+                                        <i class="fa-regular fa-folder-open"></i>
+                                        Study Data
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="folder-link"><i class="fa-regular fa-folder"></i>123</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="folder-link"><i class="fa-regular fa-folder"></i>124</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="folder-link"><i class="fa-regular fa-folder"></i>125</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="stmanpage__contentwrap">
+                    <div class="stmanpage__header">
+                        <p class="title">Study Management</p>
+                    </div>
                     <div class="stmanpage__conthead">
                         <div class="searchsect">
                             <div class="inputfield">
@@ -493,10 +509,32 @@
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </main>
-    
 
+    <ul class="foldercontmenu" style="display: none;">
+        <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#permission-popup">
+                <img src="img/studymanagement/pormission.png" alt="icon">
+                Permission
+            </a>
+        </li>
+        <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#notification-popup">
+                <img src="img/studymanagement/notif.png" alt="icon">
+                Notification
+            </a>
+        </li>
+        <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#copytodrive-popup">
+                <img src="img/studymanagement/copy.png" alt="icon">
+                Copy to Drive
+            </a>
+        </li>
+    </ul>
 
 
     <!-- permission -->
@@ -647,5 +685,3 @@
 </body>
 
 </html>
-
-

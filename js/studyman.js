@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+    // extension icons
     $('.filetext').each(function () {
         var fileName = $(this).text().trim();
         var extension = fileName.split('.').pop().toLowerCase();
@@ -69,6 +69,7 @@ $(document).ready(function () {
 
     });
 
+    // sidebar folders
     $('#html').jstree({
         'plugins': ['contextmenu', 'types'],
         'types': {
@@ -87,21 +88,21 @@ $(document).ready(function () {
                         'label': 'Permission',
                         'icon': './img/studymanagement/pormission.png',
                         'action': function () {
-
+                            $('#permission-popup').modal('show');
                         },
                     },
                     'item2': {
                         'label': 'Notification',
                         'icon': './img/studymanagement/notif.png',
                         'action': function () {
-
+                            $('#notification-popup').modal('show');
                         }
                     },
                     "item3": {
                         "label": "Copy to Drive",
                         'icon': './img/studymanagement/copy.png',
                         'action': function () {
-
+                            $('#copytodrive-popup').modal('show');
                         }
                     }
                 }
@@ -109,12 +110,7 @@ $(document).ready(function () {
         },
     });
 
-
-
-
-
-
-
+    // data table
     if ($('.dttable').length) {
         let table = new DataTable('.dttable', {
             searching: false,
@@ -123,7 +119,6 @@ $(document).ready(function () {
             // dom: "rtiplf"
         });
     }
-
 
     // right click - menu
     $('.filetext').on('contextmenu', function (e) {
@@ -134,15 +129,54 @@ $(document).ready(function () {
         $(this).next('.filecontextmenu').addClass('show');
     });
 
-    // $(document).on('click', function () {
-    //     $('.filecontextmenu').removeClass('show');
-    // });
-
     $(document).click(function (event) {
         let $target = $(event.target);
         if (!$target.closest('.filecontextmenu').length && !$target.closest('.filetext').length) {
             $('.filecontextmenu').removeClass('show');
         }
     });
+
+
+
+
+
+
+
+
+
+
+    // v2
+    $('.folderlist li a').click(function () {
+        $('.folderlist li a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+    if ($('.folder-link').length) {
+        $('.folder-link').on('contextmenu', function (e) {
+            e.preventDefault();
+
+            var mouseX = e.clientX;
+            var mouseY = e.clientY;
+
+            var contextMenu = $('.foldercontmenu');
+            contextMenu.css({
+                display: 'block',
+                position: 'absolute',
+                left: mouseX + 'px',
+                top: mouseY + 'px'
+            });
+
+            $(document).click(function (event) {
+                let $target = $(event.target);
+                if (!$target.closest('.folder-link').length && !$target.closest('.foldercontmenu').length) {
+                    contextMenu.hide();
+                }
+            });
+        });
+    }
+
+
+
 
 });
