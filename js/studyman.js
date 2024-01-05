@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+
+    if ($('.studselect').length) {
+        $('.studselect').select2({
+            // minimumResultsForSearch: -1,
+            // dropdownCssClass: "headerselectdropdown"
+            dropdownParent: $('.mdmodal'),
+            dropdownCssClass: "modaldd"
+        });
+    }
+
     // extension icons
     $('.filetext').each(function () {
         var fileName = $(this).text().trim();
@@ -111,7 +121,7 @@ $(document).ready(function () {
     });
 
     // data table
-    if ($('.dttable').length) {
+    if ($('.dttable.v1').length) {
         let table = new DataTable('.dttable', {
             searching: false,
             paging: false,
@@ -135,12 +145,6 @@ $(document).ready(function () {
             $('.filecontextmenu').removeClass('show');
         }
     });
-
-
-
-
-
-
 
 
 
@@ -179,4 +183,227 @@ $(document).ready(function () {
 
 
 
+
+
+
+    // modals
+
+    $('#uncheckall').change(function () {
+        var isChecked = $(this).prop('checked');
+
+        $('.col-lg-4 .checkfiled :checkbox').prop('checked', true);
+
+        if (!isChecked) {
+            $('.col-lg-4 .checkfiled :checkbox').prop('checked', false);
+        }
+    });
+
+    $('.checkfiled input').change(function () {
+        if ($('.col-lg-4 .checkfiled :checkbox:not(:checked)').length > 0) {
+            $('#uncheckall').prop('checked', false);
+        } else {
+            $('#uncheckall').prop('checked', true);
+        }
+    });
+
+
+
 });
+
+
+
+
+if ($('.stmanpage.v2').length) {
+
+    $(document).ready(function () {
+
+        var originalData; 
+
+        var table = $('.dttable').DataTable({
+            searching: false,
+            paging: false,
+            info: false,
+            "ajax": {
+                "url": "data.json", 
+                "dataSrc": function (json) {
+                    originalData = json; 
+                    return json;
+                }
+            }
+        });
+
+        $('.folder-link').click(function (e) {
+            e.preventDefault();
+            var folderId = $(this).data('folder-id');
+            var folderData = originalData[folderId];
+            insertDataIntoTable(folderData);
+        });
+
+
+        $.getJSON('data.json', function (data) {
+            $('.folder-link').click(function (e) {
+                e.preventDefault();
+
+                var folderId = $(this).data('folder-id');
+                console.log(folderId)
+
+                var folderData = data[folderId];
+
+                insertDataIntoTable(folderData);
+            });
+        });
+
+        function getFileExtension(fileName) {
+            return fileName.split('.').pop().toLowerCase();
+        }
+
+
+        
+
+        function insertDataIntoTable(data) {
+            table.clear().draw(); 
+
+            $.each(data, function (index, item) {
+                var extension = getFileExtension(item.documentName);
+
+
+                var newRow = '<tr>' +
+                    '<td>' +
+                    '<p class="filetext ' + getClassFromData(item) + '">' +
+                    '<img src="' + getImagePathByExtension(extension) + '" alt="img">' +
+                    item.documentName +
+                    '</p>' +
+                    // '<ul class="filecontextmenu">' +
+                    // '<li>' +
+                    // '<a href="#" data-bs-toggle="modal" data-bs-target="#view-popup">' +
+                    // '<i class="fa-solid fa-eye"></i>' +
+                    // 'View' +
+                    // '</a>' +
+                    // '</li>' +
+                    // '<li><a href="#" data-bs-toggle="modal" data-bs-target="#publish-popup">Publish</a></li>' +
+                    // '<li><a href="#" data-bs-toggle="modal" data-bs-target="#unpublish-popup">Unpublish</a></li>' +
+                    // '<li><a href="#">Query</a></li>' +
+                    // '<li><a href="#" data-bs-toggle="modal" data-bs-target="#viewhistory-popup">Version History</a></li>' +
+                    // '<li><a href="#">Review History</a></li>' +
+                    // '</ul>' +
+                    '</td>' +
+                    '<td>' + item.version + '</td>' +
+                    '<td>' + item.modifiedBy + '</td>' +
+                    '<td>' + item.modifiedOn + '</td>' +
+                    '<td>' + item.size + '</td>' +
+                    '<td>' + item.owner + '</td>' +
+                    '</tr>';
+
+                table.row.add($(newRow)).draw();
+            });
+        }
+
+
+        function getClassFromData(item) {
+            if (item.status === 'published') {
+                return 'publish';
+            } else if (item.status === 'unpublished') {
+                return 'unpublish';
+            } else {
+                return ''; 
+            }
+        }
+
+
+        function getImagePathByExtension(extension) {
+            switch (extension) {
+                case 'pdf':
+                    return 'img/studymanagement/pdf.png';
+                case 'xls':
+                case 'xlsx':
+                    return 'img/studymanagement/xls.png';
+                case 'txt':
+                    return 'img/studymanagement/txt.png';
+                case 'png':
+                case 'jpg':
+                case 'jpg':
+                    return 'img/studymanagement/xls.png';
+                case 'ppt':
+                    return 'img/studymanagement/ppt.png';
+                case 'pptx':
+                    return 'img/studymanagement/powerpoint.png';
+                case 'zip':
+                case 'rar':
+                    return 'img/studymanagement/zip.png';
+                case 'doc':
+                case 'docs':
+                    return 'img/studymanagement/word.png';
+                case 'mp3':
+                case 'mp4':
+                    return 'img/studymanagement/music.png';
+                default:
+                    return 'img/studymanagement/default.png';
+            }
+        }
+
+
+
+
+        $(document).on('contextmenu', '.filetext', function (e) {
+            e.preventDefault();
+
+            var clickedElement = $(this);
+            var fileName = clickedElement.text().trim();
+            var extension = getFileExtension(fileName);
+
+            var contextMenu = $('<ul class="filecontextmenu v2"></ul>');
+
+            if (isAudioExtension(extension)) {
+                contextMenu.append('<li><a href="#" data-bs-toggle="modal" data-bs-target="#view-popup">' +
+                    '<i class="fa-solid fa-play"></i>' +
+                    'Play</a></li>');
+            } else {
+                contextMenu.append('<li><a href="#" data-bs-toggle="modal" data-bs-target="#view-popup">' +
+                    '<i class="fa-solid fa-eye"></i>' +
+                    'View</a></li>');
+            }
+
+            contextMenu.append(
+                '<li><a href="#" data-bs-toggle="modal" data-bs-target="#publish-popup">Publish</a></li>' +
+                '<li><a href="#" data-bs-toggle="modal" data-bs-target="#unpublish-popup">Unpublish</a></li>' +
+                '<li><a href="#">Query</a></li>' +
+                '<li><a href="#" data-bs-toggle="modal" data-bs-target="#viewhistory-popup">Version History</a></li>' +
+                '<li><a href="#">Review History</a></li>'
+            );
+
+            $('body').append(contextMenu);
+
+            contextMenu.css({
+                top: e.pageY + 'px',
+                left: e.pageX + 'px',
+                position: 'absolute'
+            });
+
+            $(document).one('click', function () {
+                contextMenu.remove();
+            });
+
+            $(document).on('contextmenu', function () {
+                contextMenu.remove();
+            });
+
+            contextMenu.find('a').click(function () {
+                contextMenu.remove();
+            });
+        });
+
+        function isAudioExtension(extension) {
+            return ['mp3', 'mp4'].includes(extension);
+        }
+
+        function getFileExtension(fileName) {
+            return fileName.split('.').pop().toLowerCase();
+        }
+
+
+    });
+
+
+
+
+}

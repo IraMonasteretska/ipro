@@ -50,7 +50,7 @@
 
                     <div class="stmanpage__contbody">
                         <div class="tablewrapper">
-                            <table class="table table-hover dttable">
+                            <table class="table table-hover dttable v1">
                                 <thead>
                                     <tr>
                                         <th>Document Name</th>
@@ -495,24 +495,107 @@
             </div>
         </div>
     </main>
-    
+
 
 
 
     <!-- permission -->
-    <div class="modal fade" id="permission-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade mdmodal" id="permission-popup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form action="#">
+                        <div class="stud-modalhead">
+                            <p class="title">Permission</p>
+                        </div>
+                        <div class="stud-modalcontent">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="inputfield">
+                                        <select class="studselect" name="username">
+                                            <option value="1">User Name</option>
+                                            <option value="2">Shailesh Thanki</option>
+                                            <option value="3">Sudershah Singh</option>
+                                            <option value="4">Name 3</option>
+                                            <option value="5">Name 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputfield">
+                                        <select class="studselect" name="method">
+                                            <option value="1">User Role</option>
+                                            <option value="2">Aplication Admin</option>
+                                            <option value="3">Site Coordinator</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="modboxin">
+                                        <div class="modboxin__head">
+                                            <p class="title">File Permission</p>
+                                            <div class="uncheckall">
+                                                <input type="checkbox" id="uncheckall">
+                                                <label for="uncheckall">Check all</label>
+                                            </div>
+                                        </div>
+                                        <div class="modboxin__body">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="1">
+                                                        <label for="1">View Document</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="2">
+                                                        <label for="2">Version History</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="3">
+                                                        <label for="3">File Publish</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="4">
+                                                        <label for="4">Review History</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="5">
+                                                        <label for="5">Mark Reviewed</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="6">
+                                                        <label for="6">Copy File to Drive</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="7">
+                                                        <label for="7">File Unpublish</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stud-footbtns">
+                            <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                            <input class="success" type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -647,5 +730,3 @@
 </body>
 
 </html>
-
-
