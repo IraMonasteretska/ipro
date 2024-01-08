@@ -215,10 +215,10 @@ $(document).ready(function () {
     });
 
     // role select - show checkboxes
-    $('#roleselect').change(function(){
+    $('#roleselect').change(function () {
         $('.modboxin').addClass('show');
     });
-    
+
 
     if ($('.selectedusers').length) {
         $('.selectedusers').select2({
@@ -226,7 +226,14 @@ $(document).ready(function () {
         });
     }
 
+    // success message
+    $('#copytodrive-popup .success').click(function () {
+        $('.successmessbox').fadeIn();
 
+        setTimeout(function () {
+            $('.successmessbox').fadeOut();
+        }, 2000);
+    });
 
 });
 
@@ -237,16 +244,16 @@ if ($('.stmanpage.v2').length) {
 
     $(document).ready(function () {
 
-        var originalData; 
+        var originalData;
 
         var table = $('.dttable').DataTable({
             searching: false,
             paging: false,
             info: false,
             "ajax": {
-                "url": "data.json", 
+                "url": "data.json",
                 "dataSrc": function (json) {
-                    originalData = json; 
+                    originalData = json;
                     return json;
                 }
             }
@@ -278,10 +285,10 @@ if ($('.stmanpage.v2').length) {
         }
 
 
-        
+
 
         function insertDataIntoTable(data) {
-            table.clear().draw(); 
+            table.clear().draw();
 
             $.each(data, function (index, item) {
                 var extension = getFileExtension(item.documentName);
@@ -325,7 +332,7 @@ if ($('.stmanpage.v2').length) {
             } else if (item.status === 'unpublished') {
                 return 'unpublish';
             } else {
-                return ''; 
+                return '';
             }
         }
 
