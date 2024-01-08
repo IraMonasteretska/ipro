@@ -5,7 +5,7 @@ $(document).ready(function () {
         $('.studselect').select2({
             // minimumResultsForSearch: -1,
             // dropdownCssClass: "headerselectdropdown"
-            dropdownParent: $('.mdmodal'),
+            // dropdownParent: $('.mdmodal'),
             dropdownCssClass: "modaldd"
         });
     }
@@ -184,11 +184,19 @@ $(document).ready(function () {
 
 
 
-
-
     // modals
 
     $('#uncheckall').change(function () {
+        var isChecked = $(this).prop('checked');
+
+        $('.col-lg-4 .checkfiled :checkbox').prop('checked', true);
+
+        if (!isChecked) {
+            $('.col-lg-4 .checkfiled :checkbox').prop('checked', false);
+        }
+    });
+
+    $('#uncheckall2').change(function () {
         var isChecked = $(this).prop('checked');
 
         $('.col-lg-4 .checkfiled :checkbox').prop('checked', true);
@@ -205,6 +213,18 @@ $(document).ready(function () {
             $('#uncheckall').prop('checked', true);
         }
     });
+
+    // role select - show checkboxes
+    $('#roleselect').change(function(){
+        $('.modboxin').addClass('show');
+    });
+    
+
+    if ($('.selectedusers').length) {
+        $('.selectedusers').select2({
+            placeholder: "Please select a country"
+        });
+    }
 
 
 

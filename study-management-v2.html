@@ -16,6 +16,9 @@
 <body>
     <main class="main">
         <div class="stmanpage v2">
+            <div class="stmanpage__header">
+                <p class="title">Study Management</p>
+            </div>
             <div class="stmanpage__body">
                 <div class="stmanpage__folderswrap">
                     <ul class="folderlist">
@@ -51,9 +54,6 @@
                 </div>
 
                 <div class="stmanpage__contentwrap">
-                    <div class="stmanpage__header">
-                        <p class="title">Study Management</p>
-                    </div>
                     <div class="stmanpage__conthead">
                         <div class="searchsect">
                             <div class="inputfield">
@@ -566,7 +566,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="inputfield">
-                                        <select class="studselect" name="method">
+                                        <select class="studselect" name="method" id="roleselect">
                                             <option value="1">User Role</option>
                                             <option value="2">Aplication Admin</option>
                                             <option value="3">Site Coordinator</option>
@@ -574,7 +574,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="modboxin">
+                                    <div class="modboxin hideselects">
                                         <div class="modboxin__head">
                                             <p class="title">File Permission</p>
                                             <div class="uncheckall">
@@ -644,77 +644,198 @@
 
 
     <!-- notification -->
-    <div class="modal fade" id="notification-popup" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal fade mdmodal v2" id="notification-popup" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form action="#">
+                        <div class="stud-modalhead">
+                            <p class="title">Notification</p>
+                        </div>
+                        <div class="stud-modalcontent">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="usinfotext">
+                                        <span>User Name:</span>
+                                        Vitya Bla
+                                    </p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="usinfotext">
+                                        <span>User Role:</span>
+                                        Application Admin
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="modboxin show">
+                                        <div class="modboxin__head">
+                                            <p class="title">File Permission</p>
+                                            <div class="uncheckall">
+                                                <input type="checkbox" id="uncheckall2">
+                                                <label for="uncheckall2">Check all</label>
+                                            </div>
+                                        </div>
+                                        <div class="modboxin__body">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="8">
+                                                        <label for="8">View Document</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="9">
+                                                        <label for="9">Version History</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="10">
+                                                        <label for="10">File Publish</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="11">
+                                                        <label for="11">Review History</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="12">
+                                                        <label for="12">Mark Reviewed</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="13">
+                                                        <label for="13">Copy File to Drive</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="checkfiled">
+                                                        <input type="checkbox" id="14">
+                                                        <label for="14">File Unpublish</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stud-footbtns">
+                            <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                            <input class="success" type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- copy to drive -->
-    <div class="modal fade" id="copytodrive-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade smmodal v2" id="copytodrive-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="ctdwrapper text-center">
+                        <img class="centpic" src="img/studymanagement/exclamation2.png" alt="img">
+                        <p class="title">
+                            Are you sure?
+                        </p>
+                        <p>
+                            You want to copy file(s) to drive.
+                        </p>
+                    </div>
+                    <div class="stud-footbtns">
+                        <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                        <input class="success" type="submit" value="Submit">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- view file -->
-    <div class="modal fade" id="view-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade xlmodal" id="view-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="stud-modalhead">
+                        <p class="title">File Title</p>
+                    </div>
+                    <div class="wrapperfile">
+                        Iframe content
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- unpublish file -->
-    <div class="modal fade" id="unpublish-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade mdmodal v2" id="unpublish-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form action="#">
+                        <div class="stud-modalhead">
+                            <p class="title">Unpublish & Notify</p>
+                        </div>
+                        <div class="stud-modalcontent">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="usinfotext">
+                                        <span>User Name:</span>
+                                        Vitya Bla
+                                    </p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="usinfotext">
+                                        <span>User Role:</span>
+                                        Application Admin
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="modboxin show">
+                                        <div class="modboxin__head">
+                                            <p class="titlesm">Selected users will be notified once unpublished.</p>
+                                        </div>
+                                        <div class="modboxin__body">
+                                            <div class="inputfield">
+                                                <!-- <select class="studselect" name="username">
+                                                    <option value="1">User Name</option>
+                                                    <option value="2">Shailesh Thanki</option>
+                                                    <option value="3">Sudershah Singh</option>
+                                                    <option value="4">Name 3</option>
+                                                    <option value="5">Name 4</option>
+                                                </select> -->
+
+                                                <select class="studselect selectedusers" multiple="multiple">
+                                                    <option></option>
+                                                    <option value="1">User Name</option>
+                                                    <option value="2">Shailesh Thanki</option>
+                                                    <option value="3">Sudershah Singh</option>
+                                                    <option value="4">Name 3</option>
+                                                    <option value="5">Name 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stud-footbtns">
+                            <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                            <input class="success" type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
