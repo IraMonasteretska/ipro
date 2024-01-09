@@ -809,21 +809,16 @@
                                         </div>
                                         <div class="modboxin__body">
                                             <div class="inputfield">
-                                                <!-- <select class="studselect" name="username">
-                                                    <option value="1">User Name</option>
-                                                    <option value="2">Shailesh Thanki</option>
-                                                    <option value="3">Sudershah Singh</option>
-                                                    <option value="4">Name 3</option>
-                                                    <option value="5">Name 4</option>
-                                                </select> -->
-
-                                                <select class="studselect selectedusers" multiple="multiple">
-                                                    <option></option>
-                                                    <option value="1">User Name</option>
-                                                    <option value="2">Shailesh Thanki</option>
-                                                    <option value="3">Sudershah Singh</option>
-                                                    <option value="4">Name 3</option>
-                                                    <option value="5">Name 4</option>
+                                                <select class="studselect selectedusers unpub" multiple="multiple">
+                                                    <option value="all">all</option>
+                                                    <option value="1">Shailesh Thanki</option>
+                                                    <option value="2">Sudershah Singh</option>
+                                                    <option value="3">Name 3</option>
+                                                    <option value="4">Name 4</option>
+                                                    <option value="5">Name 5</option>
+                                                    <option value="6">Name 6</option>
+                                                    <option value="7">Name 7</option>
+                                                    <option value="8">Name 8</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -842,39 +837,129 @@
     </div>
 
     <!-- publish file -->
-    <div class="modal fade" id="publish-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade mdmodal v2" id="publish-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form action="#">
+                        <div class="stud-modalhead">
+                            <p class="title">Publish & Notify</p>
+                        </div>
+                        <div class="stud-modalcontent">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="usinfotext">
+                                        <span>User Name:</span>
+                                        Vitya Bla
+                                    </p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="usinfotext">
+                                        <span>User Role:</span>
+                                        Application Admin
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="modboxin show">
+                                        <div class="modboxin__head">
+                                            <p class="titlesm">Selected users will be notified once unpublished.</p>
+                                        </div>
+                                        <div class="modboxin__body">
+                                            <div class="inputfield">
+                                                <select class="studselect selectedusers pub" multiple="multiple">
+                                                    <option value="all">all</option>
+                                                    <option value="1">Shailesh Thanki</option>
+                                                    <option value="2">Sudershah Singh</option>
+                                                    <option value="3">Name 3</option>
+                                                    <option value="4">Name 4</option>
+                                                    <option value="5">Name 5</option>
+                                                    <option value="6">Name 6</option>
+                                                    <option value="7">Name 7</option>
+                                                    <option value="8">Name 8</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stud-footbtns">
+                            <a href="#" class="cancel" data-bs-dismiss="modal">Cancel</a>
+                            <input class="success" type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- view history -->
-    <div class="modal fade" id="viewhistory-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade xlmodal v2" id="viewhistory-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    ...
+                    <div class="stud-modalhead">
+                        <p class="title">Version history</p>
+                    </div>
+                    <div class="stud-modalcontent">
+                        <p class="docname">Document Name: T1243435343VGF233.docx</p>
+                        <div class="historytable__wrapper">
+                            <table class="historytable table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Version #</th>
+                                        <th>Modified On</th>
+                                        <th>Modified By</th>
+                                        <th>Size</th>
+                                        <th>Reason</th>
+                                        <th>Copy to Drive</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>V1</td>
+                                        <td>05/30/2018 04:01 PM</td>
+                                        <td>Karina PalafoxS</td>
+                                        <td>87.23 KB</td>
+                                        <td>-</td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="img/studymanagement/cloud-computing.png" alt="img">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>V2</td>
+                                        <td>06/30/2018 05:01 PM</td>
+                                        <td>John Doe</td>
+                                        <td>12.3 MB</td>
+                                        <td>-</td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="img/studymanagement/cloud-computing.png" alt="img">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>V1</td>
+                                        <td>05/30/2018 02:01 PM</td>
+                                        <td>Karina PalafoxS</td>
+                                        <td>156.23 KB</td>
+                                        <td>-</td>
+                                        <td>
+                                            <a href="#">
+                                                <img src="img/studymanagement/cloud-computing.png" alt="img">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+
             </div>
         </div>
     </div>
@@ -890,8 +975,6 @@
     <script src="js/lib/jquery.dataTables.js"></script>
     <script src="js/lib/jstree.min.js"></script>
     <script src="js/lib/all.js"></script>
-    <!-- <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/plugins/contextmenu/jstree.contextmenu.js"></script> -->
     <script src="js/common.js"></script>
     <script src="js/studyman.js"></script>
 </body>

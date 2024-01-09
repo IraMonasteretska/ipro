@@ -220,11 +220,39 @@ $(document).ready(function () {
     });
 
 
-    if ($('.selectedusers').length) {
-        $('.selectedusers').select2({
-            placeholder: "Please select a country"
+    if ($('.selectedusers.unpub').length) {
+        $('.selectedusers.unpub').select2({
+            placeholder: "Please select users"
         });
+
+        $('.selectedusers.unpub').on("select2:select", function (e) { 
+            var data = e.params.data.text;
+            if(data=='all'){
+             $(".selectedusers.unpub > option").prop("selected","selected");
+             $(".selectedusers.unpub").trigger("change");
+            }
+       });
+
     }
+
+    if ($('.selectedusers.pub').length) {
+        $('.selectedusers.pub').select2({
+            placeholder: "Please select users"
+        });
+
+        $('.selectedusers.pub').on("select2:select", function (e) { 
+            var data = e.params.data.text;
+            if(data=='all'){
+             $(".selectedusers.pub > option").prop("selected","selected");
+             $(".selectedusers.pub").trigger("change");
+            }
+       });
+
+    }
+
+
+
+
 
     // success message
     $('#copytodrive-popup .success').click(function () {

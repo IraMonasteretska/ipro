@@ -1008,6 +1008,8 @@
         }
     }
 
+   
+
 }
 
 .smmodal {
@@ -1187,11 +1189,74 @@
             padding-right: 30px;
         }
     }
+
+    .docname {
+        color: #39628d;
+    }
 }
 
 .select2-dropdown.modaldd {
     .select2-results__option--highlighted.select2-results__option--selectable {
         background-color: #39628d !important;
+    }
+}
+
+.select2-container .select2-selection--multiple {
+    min-height: 40px;
+    padding-left: 10px;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    height: 22px;
+    margin-top: 8px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #f2f8fe;
+    border: 1px solid #b8cce1;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #b8cce1;
+    font-weight: 500;
+    border-right: 1px solid #b8cce1;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #b8cce1;
+}
+
+.mdmodal .select2-selection--multiple .select2-search__field:focus {
+    border: none;
+}
+
+.historytable {
+    width: 100%;
+
+    th, td {
+        vertical-align: middle;
+    }
+
+    th, td {
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            text-align: center;
+        }
+    }
+
+    th {
+        background: #f2f8fe;
+        border: 1px solid #b8cce1;
+    }
+}
+
+.historytable__wrapper {
+    overflow: auto;
+    
+    table {
+        min-width: 800px;
     }
 }
 
@@ -1228,12 +1293,45 @@
         color: #fff;
     }
 
+
+
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        background-color: #f2f8fe;
+        border: 1px solid #2a3042;
+    }
+    
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+        color: #2a3042;
+        border-right: 1px solid #2a3042;
+    }
+    
+    .select2-container--default .select2-selection--multiple {
+        border: 1px solid #2a3042;
+    }
+
 }
 
 .smmodal.v2 {
     .stud-footbtns .success {
         background: #2a3042;
     }
+}
+
+.xlmodal.v2 {
+    .historytable th {
+        background: #2A3042;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .docname {
+        color: #2A3042;
+    }
+}
+
+@media(max-width:991.8px) {
+
 }
 
 @media(max-width:767.8px) {
@@ -1310,7 +1408,13 @@
         max-width: 100%;
     }
 
+    .xlmodal .stud-modalhead .title {
+        font-size: 18px;
+    }
 
+    .xlmodal .btn-close {
+        top: 18px;
+    }
 
 }
 
