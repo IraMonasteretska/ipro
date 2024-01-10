@@ -1,0 +1,242 @@
+body,
+html {
+    height: 100%;
+}
+
+.crf-main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+// --
+
+.crfwrapper {
+    padding: 20px;
+    background: #f2f8fe;
+
+    .formeo-controls {
+        .control-group {
+            border-radius: 8px 8px 0 0;
+        }
+
+        .field-control {
+            border: 1px solid #b8cce1;
+        }
+
+    }
+
+    .form-actions.f-btn-group {
+        margin-top: 15px;
+
+        button {
+            border: 1px solid #4396bb;
+            transition: 0.3s;
+            padding: 8px 15px;
+            min-width: 100px;
+
+            &:hover {
+                filter: none;
+            }
+        }
+
+        .clear-form {
+            &:hover {
+                background: #195e7d;
+                color: #fff;
+            }
+        }
+
+        .save-form {
+            background: #4396bb;
+            color: #fff;
+
+            &:hover {
+                // background: #4396bb;
+                background: #22751e;
+                border-color: #22751e;
+                color: #fff;
+            }
+        }
+    }
+
+    .field-control button,
+    .formeo-controls .field-control button {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .formeo.formeo-editor .formeo-stage {
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid #b8cce1;
+        margin-right: 20px;
+        padding: 10px 10px 10px 30px;
+        min-height: 511px;
+    }
+
+    .formeo .f-addon,
+    .formeo.formeo-editor .field-edit [contenteditable],
+    .formeo input,
+    .formeo select,
+    .formeo textarea {
+        &:focus {
+            border: 1px solid #b8cce1;
+        }
+    }
+
+    .hidden-control {
+        display: none;
+    }
+
+    .formeo input[type="file"] {
+        height: auto;
+        background: #f2f8fe;
+    }
+
+}
+
+.crf-header,
+.crf-footer {
+    min-height: 50px;
+    background: #fff;
+    border: 1px solid #b8cce1;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.crf-footer {
+    margin: 20px 0 0 0;
+}
+
+.testtext {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.recording-info {
+    min-height: 300px;
+    background: #fff;
+    border: 1px solid #b8cce1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+
+    .title {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// v2
+.crfwrapper.v2 {
+
+    .field-control,
+    .formeo-controls .field-control {
+        background: #2A3042;
+
+        button {
+            color: #fff;
+
+            span {
+                filter: invert(1);
+            }
+        }
+    }
+
+    .formeo-controls .field-control {
+        &:hover {
+            background: #484d5f;
+        }
+    }
+
+    .crf-footer,
+    .crf-header {
+        border: 1px solid #2A3042;
+    }
+
+    .formeo.formeo-editor .formeo-stage,
+    .recording-info {
+        border: 1px solid #2A3042;
+    }
+
+    .formeo.formeo-editor .hovering-field {
+        box-shadow: inset 0 0 0 1px rgba(42, 48, 66, 0.5);
+    }
+
+    .field-control button:focus {
+        background-color: #484d5f;
+        box-shadow: none;
+        border: none;
+    }
+
+    .formeo .f-addon:focus,
+    .formeo input:focus,
+    .formeo select:focus,
+    .formeo textarea:focus,
+    .formeo.formeo-editor .field-edit [contenteditable]:focus {
+        border: 1px solid #2A3042;
+    }
+
+     .form-actions.f-btn-group button {
+        border: 1px solid #2A3042;
+    }
+
+    .form-actions.f-btn-group .save-form {
+        background: #2A3042;
+    }
+
+    .form-actions.f-btn-group .save-form:hover {
+        background: #22751e;
+        border-color: #22751e;
+        color: #fff;
+    }
+
+    .form-actions.f-btn-group .clear-form:hover {
+        background: #b8cce1;
+        color: #2A3042;
+    }
+
+    .formeo {
+        .panel-nav {
+            button {
+                border: 1px solid #2a3042;
+            }
+
+             h5 {
+                color: #2a3042;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .panel-labels {
+                border-top: 1px solid #2a3042;
+                border-radius: 0;
+            }
+
+        }
+    }
+
+
+}
+
+
