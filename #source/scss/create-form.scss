@@ -197,7 +197,7 @@ html {
         border: 1px solid #2A3042;
     }
 
-     .form-actions.f-btn-group button {
+    .form-actions.f-btn-group button {
         border: 1px solid #2A3042;
     }
 
@@ -222,7 +222,7 @@ html {
                 border: 1px solid #2a3042;
             }
 
-             h5 {
+            h5 {
                 color: #2a3042;
                 font-size: 18px;
                 font-weight: 500;
@@ -236,7 +236,149 @@ html {
         }
     }
 
-
 }
 
 
+@media(max-width:1600.8px) {
+
+    .crfwrapper .field-control button,
+    .crfwrapper .formeo-controls .field-control button {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+
+    .crfwrapper .field-control button,
+    .crfwrapper .formeo-controls .field-control button {
+        font-size: 15px;
+    }
+
+    .formeo-controls {
+        width: 30%;
+    }
+
+}
+
+@media(max-width:767.8px) {
+
+    .crfwrapper .field-control button,
+    .crfwrapper .formeo-controls .field-control button {
+        font-size: 14px;
+    }
+
+    .crfwrapper .formeo.formeo-editor .formeo-stage {
+        margin-right: 5px;
+    }
+
+    .formeo-controls {
+        width: 40%;
+    }
+
+    .crfwrapper .form-actions.f-btn-group button {
+        padding: 6px 10px;
+        min-width: 90px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .crfwrapper {
+        padding: 10px;
+    }
+
+    .crfwrapper:not(.v2) {
+        .formeo-controls {
+            width: 100%;
+            order: 1;
+        }
+
+        .formeo-stage {
+            order: 2;
+        }
+
+        .formeo.formeo-editor {
+            flex-wrap: wrap;
+        }
+
+        .formeo-controls .panel-count-1 .control-group li:first-child,
+        .formeo-controls .panel-count-1 .control-group li:last-child {
+            border-radius: 0;
+        }
+
+        .formeo-controls .form-actions {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .form-actions.f-btn-group {
+            margin-top: 5px;
+            align-items: center;
+        }
+
+        .form-actions.f-btn-group button {
+            height: 36px;
+            border-radius: 0 !important;
+        }
+
+        .formeo.formeo-editor .formeo-stage {
+            min-height: 200px;
+        }
+    }
+
+    .crfwrapper.v2 {
+
+       
+        .formeo-controls .field-control button {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            word-wrap: break-word;
+            white-space: normal;
+            line-height: 140%;
+            font-size: 12px;
+
+            .control-icon {
+                display: none;
+            }
+        }
+
+        .formeo-controls {
+            width: 100px;
+        }
+
+        .form-actions.f-btn-group button {
+            height: 36px;
+            border-radius: 0 !important;
+            width: 100%;
+            min-width: initial;
+        }
+
+        .formeo.formeo-editor .formeo-stage {
+            min-height: 200px;
+        }
+
+        .formeo .panel-nav h5 {
+            display: none;
+        }
+
+        .formeo .panel-nav button {
+            height: 30px;
+            width: 50%;
+            display: inline-block;
+            position: relative;
+        }
+
+        .formeo-controls nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0;
+        }
+
+
+    }
+
+}

@@ -108,7 +108,6 @@ $(document).ready(function () {
         }
     });
 
-
     // v2
 
     var formeo = new FormeoEditor({
